@@ -1,0 +1,62 @@
+/*
+========================================================
+
+                        COLORS
+
+========================================================
+*/
+
+@each $color, $value in (lightBlue, #45C6D6), (white, #FFFFFF), (lightGrey, #F5F7FA), (grey, #D0D4DA), (black, #575957),
+                        (violet, #B67BE9), (lightGreen, #50E3C2), (lightOrange, #F6AC56), (greenLemon, #60D180),
+                        (red, #E05D6D), (yellow, #F0C70A), (blue, #4A90E2), (maroon, #8B572A), (pink, #E08ACE), (green, #23C19E){
+
+    .color-#{$color}{
+        color: $value;
+    }
+
+    .background-#{$color}{
+        background-color: $value;
+    }
+
+}
+
+/*
+========================================================
+
+                        FONTS
+
+========================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+
+@each $type, $weight, $size in (regular, 400, 10px), (regular, 400, 12px), (regular, 400, 15px), (regular, 400, 20px), (regular, 400, 35px),
+                                (medium, 500, 10px), (medium, 500, 12px), (medium, 500, 15px), (medium, 500, 20px), (medium, 500, 35px),
+                                (semiBold, 600, 10px), (semiBold, 600, 12px), (semiBold, 600, 15px), (semiBold, 600, 20px), (semiBold, 600, 35px),
+                                (bold, 700, 10px), (bold, 700, 12px), (bold, 700, 15px), (bold, 700, 20px), (bold, 700, 35px){
+    $font: 'Montserrat', sans-serif;
+
+    .font-#{$type}-#{$size}{
+        font:{
+            family: $font;
+            weight: $weight;
+            size: $size;
+        }
+    }
+}
+
+/*
+========================================================
+
+                        BOX SHADOW
+
+========================================================
+*/
+
+@each $color, $align, $shadow, $value in (lightBlue, 3px, 30px, #45C6D6), (red, 3px, 20px, #E05D6D), (lightGreen, 3px, 20px, #50E3C2), (black, 5px, 20px, rgba(0, 0, 0, 0.1)){
+
+    .shadow-#{$color}{
+        box-shadow: 0 $align $shadow $value;
+    }
+
+}

@@ -1,0 +1,225 @@
+/*
+========================================================
+
+                        COLORS
+
+========================================================
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
+.color-lightBlue {
+  color: #45C6D6; }
+
+.background-lightBlue {
+  background-color: #45C6D6; }
+
+.color-white {
+  color: #FFFFFF; }
+
+.background-white {
+  background-color: #FFFFFF; }
+
+.color-lightGrey {
+  color: #F5F7FA; }
+
+.background-lightGrey {
+  background-color: #F5F7FA; }
+
+.color-grey {
+  color: #D0D4DA; }
+
+.background-grey {
+  background-color: #D0D4DA; }
+
+.color-black {
+  color: #575957; }
+
+.background-black {
+  background-color: #575957; }
+
+.color-violet {
+  color: #B67BE9; }
+
+.background-violet {
+  background-color: #B67BE9; }
+
+.color-lightGreen {
+  color: #50E3C2; }
+
+.background-lightGreen {
+  background-color: #50E3C2; }
+
+.color-lightOrange {
+  color: #F6AC56; }
+
+.background-lightOrange {
+  background-color: #F6AC56; }
+
+.color-greenLemon {
+  color: #60D180; }
+
+.background-greenLemon {
+  background-color: #60D180; }
+
+.color-red {
+  color: #E05D6D; }
+
+.background-red {
+  background-color: #E05D6D; }
+
+.color-yellow {
+  color: #F0C70A; }
+
+.background-yellow {
+  background-color: #F0C70A; }
+
+.color-blue {
+  color: #4A90E2; }
+
+.background-blue {
+  background-color: #4A90E2; }
+
+.color-maroon {
+  color: #8B572A; }
+
+.background-maroon {
+  background-color: #8B572A; }
+
+.color-pink {
+  color: #E08ACE; }
+
+.background-pink {
+  background-color: #E08ACE; }
+
+.color-green {
+  color: #23C19E; }
+
+.background-green {
+  background-color: #23C19E; }
+
+/*
+========================================================
+
+                        FONTS
+
+========================================================
+*/
+.font-regular-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px; }
+
+.font-regular-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px; }
+
+.font-regular-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px; }
+
+.font-regular-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px; }
+
+.font-regular-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 35px; }
+
+.font-medium-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px; }
+
+.font-medium-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px; }
+
+.font-medium-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px; }
+
+.font-medium-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px; }
+
+.font-medium-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 35px; }
+
+.font-semiBold-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 10px; }
+
+.font-semiBold-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px; }
+
+.font-semiBold-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px; }
+
+.font-semiBold-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px; }
+
+.font-semiBold-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 35px; }
+
+.font-bold-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 10px; }
+
+.font-bold-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px; }
+
+.font-bold-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px; }
+
+.font-bold-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px; }
+
+.font-bold-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 35px; }
+
+/*
+========================================================
+
+                        BOX SHADOW
+
+========================================================
+*/
+.shadow-lightBlue {
+  box-shadow: 0 3px 30px #45C6D6; }
+
+.shadow-red {
+  box-shadow: 0 3px 20px #E05D6D; }
+
+.shadow-lightGreen {
+  box-shadow: 0 3px 20px #50E3C2; }
+
+.shadow-black {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=styles.css.map */
