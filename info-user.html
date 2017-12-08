@@ -14,124 +14,57 @@
         <div class="form-container w-100p background-lightGrey flex-column-center-center-center">
             <div class="wrap box size100 flex-row-between-center-center">
 
-                <div class="box size70 flex-column-center-between-center">
-
-                    <div class="choose-genre m-top-40px">
-                        <p class="w-100p font-medium-15px color-black m-bottom-10px text-align-center">Qual é o seu sexo?</p>
-                        <div class="container background-white shadow-black flex-row-between-start-center">
-                            <a class="male m-left-30px">
-                                <img class="active" src="images/characters/white-man.svg" alt="">
-                            </a>
-                            <div class="divide translate-horizontal-vertical background-lightGrey"></div>
-                            <a class="female m-right-30px">
-                                <img src="images/characters/white-woman.svg" alt="">
-                            </a>
+                <div class="box size33 flex-column-center-between-center">
+                    <p class="w-100p font-regular-15px color-black m-bottom-10px text-align-center">Qual é a sua data de nascimento?</p>
+                    <div class="calendar flex-row-center-center-center">
+                        <div class="md-select day">
+                            <label for="ul-id"><button type="button" class="ng-binding">Qual o Dia?</button></label>
+                            <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">01</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">02</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">03</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">04</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">06</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">07</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">08</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">09</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">10</li>
+                            </ul>
+                        </div>
+                        <div class="md-select month">
+                            <label for="ul-id"><button type="button" class="ng-binding">Qual o Mês?</button></label>
+                            <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">Janeiro</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Fevereiro</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Março</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Abril</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Maio</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Junho</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Julho</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Agosto</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Setembro</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Outubro</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Novembro</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Dezembro</li>
+                            </ul>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="md-select year">
+                            <label for="ul-id"><button type="button" class="ng-binding">Qual o Ano?</button></label>
+                            <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">1990</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">1991</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">1992</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">1993</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">1994</li>
+                                <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">1995</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <div class="choose-ethnicity w-90p m-top-40px">
-                        <div class="container">
-                            <div class="container male flex-row-between-center-center">
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/white-man.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Branca
-                                                <small class="w-100p font-regular-10px color-white text-align-center">(Caucasiana)</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
+                <div class="box size33 flex-column-center-between-center">
 
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/asian-man.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Amarela
-                                                <small class="w-100p font-regular-10px color-white text-align-center">(Asiática)</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/black-man.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Preta
-                                                <small class="w-100p font-regular-10px color-white text-align-center">(Afrodescendente)</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/other-man.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Outra
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="container female flex-row-between-center-center">
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/white-woman.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Branca
-                                                <small class="w-100p font-regular-10px color-white text-align-center">(Caucasiana)</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/asian-woman.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Amarela
-                                                <small class="w-100p font-regular-10px color-white text-align-center">(Asiática)</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/black-woman.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Preta
-                                                <small class="w-100p font-regular-10px color-white text-align-center">(Afrodescendente)</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="" title="">
-                                    <div class="card background-white shadow-black flex-column-start-center-start">
-                                        <img class="m-top-40px" src="images/characters/other-woman.svg" alt="">
-                                        <div class="description background-lightBlue zIndex-10 flex-column-center-center-center">
-                                            <p class="w-100p font-regular-20px color-white text-align-center">
-                                                Outra
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
                 </div>
 
                 <div class="box contentSteps size33 flex-column-start-start-start">
@@ -142,10 +75,10 @@
                     <button type="button" name="button" class="goButton background-lightBlue color-white shadow-lightBlue">Próximas perguntas</button>
 
                     <div class="steps m-top-30px">
-                        <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">1 / 3</p>
+                        <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">2 / 3</p>
                         <div class="bars flex-row-around-center-center">
                             <div class="bar active"></div>
-                            <div class="bar"></div>
+                            <div class="bar active"></div>
                             <div class="bar"></div>
                         </div>
                     </div>

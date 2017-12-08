@@ -5,7 +5,7 @@ Use "@extend .background-grey !optional" if the extend should be able to fail.
 
 
 Backtrace:
-css/components.scss:187
+css/components.scss:188
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `block in each_value'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/util/subset_map.rb:105:in `each'

@@ -2320,7 +2320,7 @@
 
 ========================================================
 */
-.color-lightBlue {
+.color-lightBlue, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
   color: #45C6D6; }
 
 .background-lightBlue, .steps .bar.active {
@@ -2338,16 +2338,16 @@
 .background-lightGrey {
   background-color: #F5F7FA; }
 
-.color-grey {
+.color-grey, .md-select [type=button] {
   color: #D0D4DA; }
 
-.background-grey, .steps .bar {
+.background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox] {
   color: #575957; }
 
-.background-black {
+.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
   background-color: #575957; }
 
 .color-violet {
@@ -2447,7 +2447,7 @@
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px {
+.font-medium-12px, .md-select [type=button], .md-select ul[role=listbox] {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
@@ -2533,7 +2533,7 @@
 .shadow-lightGreen, .goButton:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
-.shadow-black {
+.shadow-black, .md-select ul[role=listbox] {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
 
 * {
@@ -4949,7 +4949,8 @@ header {
   height: 1000px; }
 
 a, button, input[type="submit"], input[type="file"] {
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 .link {
   text-align: center; }
@@ -5099,13 +5100,102 @@ button {
   transition-duration: 0.25s; }
 
 /*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                    SELECT
+                                            (Used on PreMed Calendar)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+.calendar {
+  width: 280px;
+  height: 205px;
+  background: url("../images/background/calendar-premed.svg") center top no-repeat;
+  background-size: 90%;
+  padding: 10px 20px 0;
+  flex-wrap: wrap; }
+  .calendar .divider {
+    width: 50%;
+    height: 1px;
+    margin: 5px 5%; }
+
+.md-select {
+  width: 45%; }
+  .md-select [type=button] {
+    background: rgba(255, 255, 255, 0);
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    width: 100%;
+    z-index: 1;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+  .md-select ul[role=listbox] {
+    background-color: white;
+    cursor: default;
+    list-style: none;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 0;
+    max-height: 0;
+    position: absolute;
+    padding: 0;
+    border-radius: 10px;
+    transform: translateY(-60%) translateX(-10%);
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    width: 170px;
+    height: 110px; }
+    .md-select ul[role=listbox]::-webkit-scrollbar-track {
+      border-radius: 50px;
+      background-color: transparent; }
+    .md-select ul[role=listbox]::-webkit-scrollbar {
+      width: 15px;
+      border: 5px solid white;
+      border-radius: 50px;
+      background-color: #D8D8D8;
+      transform: scale(0.8); }
+    .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
+      border-radius: 50px;
+      width: 5px;
+      border-right: 5px solid white;
+      border-left: 5px solid white;
+      border-top: 5px solid rgba(255, 255, 255, 0);
+      border-bottom: 5px solid rgba(255, 255, 255, 0);
+      background-clip: content-box; }
+    .md-select ul[role=listbox] li {
+      height: 20px;
+      line-height: 20px;
+      margin: 0;
+      padding: 10px 16px;
+      outline: none;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+  .md-select.active ul {
+    max-height: 200px;
+    overflow: auto;
+    padding: 8px 0 16px 0px;
+    z-index: 2;
+    transition: all 0.2s ease; }
+
+/*
 ========================================================
 
                         COLORS
 
 ========================================================
 */
-.color-lightBlue {
+.color-lightBlue, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
   color: #45C6D6; }
 
 .background-lightBlue, .steps .bar.active {
@@ -5123,16 +5213,16 @@ button {
 .background-lightGrey {
   background-color: #F5F7FA; }
 
-.color-grey {
+.color-grey, .md-select [type=button] {
   color: #D0D4DA; }
 
-.background-grey, .steps .bar {
+.background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox] {
   color: #575957; }
 
-.background-black {
+.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
   background-color: #575957; }
 
 .color-violet {
@@ -5232,7 +5322,7 @@ button {
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px {
+.font-medium-12px, .md-select [type=button], .md-select ul[role=listbox] {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
@@ -5318,7 +5408,7 @@ button {
 .shadow-lightGreen, .goButton:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
-.shadow-black {
+.shadow-black, .md-select ul[role=listbox] {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=main.css.map */

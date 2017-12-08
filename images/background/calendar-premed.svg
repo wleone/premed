@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="290px" height="203px" viewBox="0 0 290 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-12.4%" y="-17.7%" width="124.9%" height="137.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0,25.9447452 L0,148.708152 C0,156.962868 8.72363886,163.679299 19.4452803,163.679299 L229.454307,163.679299 C240.175948,163.679299 248.899587,156.962868 248.899587,148.708152 L248.899587,25.9447452 L0,25.9447452 Z" id="path-2"></path>
+    </defs>
+    <g id="Questions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Demograficos---2-/-3" transform="translate(-105.000000, -313.000000)" fill-rule="nonzero">
+            <g id="Carachter" transform="translate(117.000000, 142.000000)">
+                <g id="Data-de-nascimentop" transform="translate(0.000000, 152.000000)">
+                    <g id="Calendar" transform="translate(8.473177, 36.022883)">
+                        <g id="calendar" filter="url(#filter-1)">
+                            <g id="Capa_1">
+                                <g id="Group">
+                                    <g id="Shape">
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                        <path stroke="#D0D4DA" stroke-width="1" d="M0.5,26.4447452 L0.5,148.708152 C0.5,156.653952 8.97545006,163.179299 19.4452803,163.179299 L229.454307,163.179299 C239.924137,163.179299 248.399587,156.653952 248.399587,148.708152 L248.399587,26.4447452 L0.5,26.4447452 Z"></path>
+                                    </g>
+                                    <path d="M229.454307,3.02344142 L19.4452803,3.02344142 C8.72363886,3.02344142 0,7.54474612 0,13.1015795 L0,31.2422281 L248.899587,31.2422281 L248.899587,13.1015795 C248.899587,7.54474612 240.175462,3.02344142 229.454307,3.02344142 Z M27.8026135,23.1797176 C24.457384,23.1797176 21.7456155,20.4724777 21.7456155,17.1328347 C21.7456155,13.7931917 24.457384,11.0859519 27.8026135,11.0859519 C31.147843,11.0859519 33.8596114,13.7931917 33.8596114,17.1328347 C33.8596114,20.4724777 31.147843,23.1797176 27.8026135,23.1797176 Z M221.096974,23.1797176 C217.751744,23.1797176 215.039976,20.4724777 215.039976,17.1328347 C215.039976,13.7931917 217.751744,11.0859519 221.096974,11.0859519 C224.442203,11.0859519 227.153972,13.7931917 227.153972,17.1328347 C227.153972,20.4724777 224.442203,23.1797176 221.096974,23.1797176 Z" id="Shape" fill="#45C6D6"></path>
+                                    <path d="M27.8026135,20.1562762 C26.1306297,20.1562762 24.7741145,18.8030342 24.7741145,17.1328347 L24.7741145,3.02344142 C24.7741145,1.35324199 26.1306297,0 27.8026135,0 C29.4745973,0 30.8311124,1.35324199 30.8311124,3.02344142 L30.8311124,17.1328347 C30.8311124,18.8030342 29.4745973,20.1562762 27.8026135,20.1562762 Z" id="Shape" fill="#5C546A"></path>
+                                    <path d="M221.096974,20.1562762 C219.42499,20.1562762 218.068475,18.8030342 218.068475,17.1328347 L218.068475,3.02344142 C218.068475,1.35324199 219.42499,0 221.096974,0 C222.768958,0 224.125473,1.35324199 224.125473,3.02344142 L224.125473,17.1328347 C224.125473,18.8030342 222.768958,20.1562762 221.096974,20.1562762 Z" id="Shape" fill="#5C546A"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
