@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="135px" viewBox="0 0 8 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Questions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Demograficos---2-/-3" transform="translate(-816.000000, -196.000000)" stroke="#45C6D6" stroke-width="1.5" fill="#45C6D6">
+            <g id="Carachter" transform="translate(117.000000, 142.000000)">
+                <g id="Height" transform="translate(532.751032, 0.000000)">
+                    <g id="Slider" transform="translate(0.000000, 51.915332)">
+                        <g id="Group-2" transform="translate(170.500000, 69.500000) rotate(90.000000) translate(-170.500000, -69.500000) translate(103.000000, 67.000000)">
+                            <path d="M1.32599725,2.45652174 L133.723631,2.45652174" id="Line"></path>
+                            <path id="Line-decoration-1" d="M1.32599725,2.45652174 L12.1259972,-0.543478261 L12.1259972,5.45652174 L1.32599725,2.45652174 Z"></path>
+                            <path id="Line-decoration-2" d="M133.723631,2.45652174 L122.923631,-0.543478261 L122.923631,5.45652174 L133.723631,2.45652174 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

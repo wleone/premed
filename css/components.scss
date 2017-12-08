@@ -329,3 +329,72 @@ button{
     transition: all .2s ease
   }
 }
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                CHANGE CHARACTER
+                                            (Used on PreMed Calendar)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+.person{
+    width: 40%;
+    min-height: 465px;
+    position: relative;
+
+    .character{
+        max-height: 120%;
+        min-height: 70%;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    }
+}
+
+.properties{
+    width: 60%;
+    height: 100%;
+
+    .ruler{
+        width: 70%;
+
+        .heightPerson{
+            width: 55px !important;
+
+            .meters{
+                font-size: 15px;
+            }
+        }
+
+        #height{
+            -webkit-appearance: none;
+            outline: none;
+            background: url('../images/background/ruler-height-premed.svg') center no-repeat;
+            background-size: 80%;
+            width: 365px;
+            height: 30px;
+            max-width: 365px;
+            max-height: 30px;
+            -webkit-transform:rotate(-90deg) scale(2.4);;
+            -moz-transform:rotate(-90deg) scale(2.4);;
+            transform: rotate(-90deg) scale(2.45);
+            z-index: 0;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                width: 40px;
+                height: 65px;
+                background: url('../images/background/line-ruler-premed.svg') center no-repeat;
+                background-size: 4px;
+                cursor:row-resize;
+            }
+        }
+    }
+}
