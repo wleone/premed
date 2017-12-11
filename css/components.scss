@@ -20,7 +20,6 @@ button{
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-
 .choose-genre{
     width: 180px;
 
@@ -360,9 +359,11 @@ button{
 .properties{
     width: 60%;
     height: 100%;
+    flex-wrap: wrap;
 
     .ruler{
         width: 70%;
+        min-height: 320px;
 
         .heightPerson{
             width: 55px !important;
@@ -372,8 +373,10 @@ button{
             }
         }
 
+        // HEIGHT RULER COMPONENT
         #height{
             -webkit-appearance: none;
+            -moz-appearance: none;
             outline: none;
             background: url('../images/background/ruler-height-premed.svg') center no-repeat;
             background-size: 80%;
@@ -395,6 +398,127 @@ button{
                 background-size: 4px;
                 cursor:row-resize;
             }
+            &::-moz-range-thumb {
+                -webkit-appearance: none;
+                border: none;
+                width: 40px;
+                height: 65px;
+                background: url('../images/background/line-ruler-premed.svg') center no-repeat;
+                background-size: 4px;
+                cursor:row-resize;
+            }
+            &::-moz-range-track{
+                -moz-appearance: none;
+                background: none;
+            }
+            &::-moz-focusring, &:focus{
+                outline: none !important;
+            }
+        }
+    }
+    // WEIGHT COMPONENT
+    .weight {
+        width: 100%;
+
+        .errorMin, .errorMax{
+            display: none;
+            clear: both;
+            text-align: center;
+            @extend .color-red ;
+        }
+
+        .quantity {
+            width: 175px;
+            position: relative;
+            flex-wrap: wrap;
+            transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button
+        {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        input[type=number]
+        {
+          -moz-appearance: textfield;
+          transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        }
+
+        input[type=number].inputExpand{
+            width: 120px;
+            margin: 10px 0 0 60px;
+        }
+        .quantity.inputExpand{
+            width: 205px;
+        }
+        .quantity-nav.inputExpand{
+            width: 295px;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .kg{
+            margin-bottom: -10px;
+        }
+
+        .quantity input {
+            width: 70px;
+            border: 0;
+            text-align: right;
+            background: transparent;
+            margin: 10px 0 0 80px;
+            @extend .font-medium-50px ;
+            @extend .color-black ;
+            transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        }
+
+        .quantity input:focus {
+          outline: 0;
+        }
+
+        .quantity-nav {
+          float: left;
+          position: absolute;
+          height: 5px;
+          width: 255px;
+          top: 0;
+          transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+
+          .quantity-button {
+            position: relative;
+            cursor: pointer;
+            border: 0;
+            text-align: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+          }
+          .quantity-up {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: url('../images/background/plus-button.svg') center no-repeat;
+            background-size: 100%;
+            top: 0;
+            right: 0;
+          }
+
+          .quantity-down {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 80px;
+            background: url('../images/background/less-button.svg') center no-repeat;
+            background-size: 100%;
+          }
         }
     }
 }

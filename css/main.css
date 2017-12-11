@@ -2344,7 +2344,7 @@
 .background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox] {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .properties .weight .quantity input {
   color: #575957; }
 
 .background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
@@ -2374,7 +2374,7 @@
 .background-greenLemon {
   background-color: #60D180; }
 
-.color-red {
+.color-red, .properties .weight .errorMin, .properties .weight .errorMax {
   color: #E05D6D; }
 
 .background-red {
@@ -2442,6 +2442,16 @@
   font-weight: 400;
   font-size: 35px; }
 
+.font-regular-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px; }
+
+.font-regular-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 50px; }
+
 .font-medium-10px {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -2466,6 +2476,16 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 35px; }
+
+.font-medium-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px; }
+
+.font-medium-50px, .properties .weight .quantity input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 50px; }
 
 .font-semiBold-10px {
   font-family: "Montserrat", sans-serif;
@@ -2492,6 +2512,16 @@
   font-weight: 600;
   font-size: 35px; }
 
+.font-semiBold-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px; }
+
+.font-semiBold-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px; }
+
 .font-bold-10px {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -2516,6 +2546,16 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 35px; }
+
+.font-bold-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px; }
+
+.font-bold-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px; }
 
 /*
 ========================================================
@@ -4948,6 +4988,269 @@ header {
 .h-200px {
   height: 1000px; }
 
+/*
+========================================================
+
+                        COLORS
+
+========================================================
+*/
+.color-lightBlue, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+  color: #45C6D6; }
+
+.background-lightBlue, .steps .bar.active {
+  background-color: #45C6D6; }
+
+.color-white {
+  color: #FFFFFF; }
+
+.background-white {
+  background-color: #FFFFFF; }
+
+.color-lightGrey {
+  color: #F5F7FA; }
+
+.background-lightGrey {
+  background-color: #F5F7FA; }
+
+.color-grey, .md-select [type=button] {
+  color: #D0D4DA; }
+
+.background-grey, .steps .bar, .calendar .divider {
+  background-color: #D0D4DA; }
+
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .properties .weight .quantity input {
+  color: #575957; }
+
+.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
+  background-color: #575957; }
+
+.color-violet {
+  color: #B67BE9; }
+
+.background-violet {
+  background-color: #B67BE9; }
+
+.color-lightGreen {
+  color: #50E3C2; }
+
+.background-lightGreen, .goButton:hover {
+  background-color: #50E3C2; }
+
+.color-lightOrange {
+  color: #F6AC56; }
+
+.background-lightOrange {
+  background-color: #F6AC56; }
+
+.color-greenLemon {
+  color: #60D180; }
+
+.background-greenLemon {
+  background-color: #60D180; }
+
+.color-red, .properties .weight .errorMin, .properties .weight .errorMax {
+  color: #E05D6D; }
+
+.background-red {
+  background-color: #E05D6D; }
+
+.color-yellow {
+  color: #F0C70A; }
+
+.background-yellow {
+  background-color: #F0C70A; }
+
+.color-blue {
+  color: #4A90E2; }
+
+.background-blue {
+  background-color: #4A90E2; }
+
+.color-maroon {
+  color: #8B572A; }
+
+.background-maroon {
+  background-color: #8B572A; }
+
+.color-pink {
+  color: #E08ACE; }
+
+.background-pink {
+  background-color: #E08ACE; }
+
+.color-green {
+  color: #23C19E; }
+
+.background-green {
+  background-color: #23C19E; }
+
+/*
+========================================================
+
+                        FONTS
+
+========================================================
+*/
+.font-regular-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 10px; }
+
+.font-regular-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px; }
+
+.font-regular-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px; }
+
+.font-regular-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px; }
+
+.font-regular-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 35px; }
+
+.font-regular-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px; }
+
+.font-regular-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 50px; }
+
+.font-medium-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px; }
+
+.font-medium-12px, .md-select [type=button], .md-select ul[role=listbox] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px; }
+
+.font-medium-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px; }
+
+.font-medium-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px; }
+
+.font-medium-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 35px; }
+
+.font-medium-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px; }
+
+.font-medium-50px, .properties .weight .quantity input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 50px; }
+
+.font-semiBold-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 10px; }
+
+.font-semiBold-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px; }
+
+.font-semiBold-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px; }
+
+.font-semiBold-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px; }
+
+.font-semiBold-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 35px; }
+
+.font-semiBold-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px; }
+
+.font-semiBold-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px; }
+
+.font-bold-10px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 10px; }
+
+.font-bold-12px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px; }
+
+.font-bold-15px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px; }
+
+.font-bold-20px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px; }
+
+.font-bold-35px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 35px; }
+
+.font-bold-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px; }
+
+.font-bold-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px; }
+
+/*
+========================================================
+
+                        BOX SHADOW
+
+========================================================
+*/
+.shadow-lightBlue {
+  box-shadow: 0 3px 30px #45C6D6; }
+
+.shadow-red {
+  box-shadow: 0 3px 20px #E05D6D; }
+
+.shadow-lightGreen, .goButton:hover {
+  box-shadow: 0 3px 20px #50E3C2; }
+
+.shadow-black, .md-select ul[role=listbox] {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+
 a, button, input[type="submit"], input[type="file"] {
   cursor: pointer;
   outline: none; }
@@ -5213,15 +5516,18 @@ button {
 
 .properties {
   width: 60%;
-  height: 100%; }
+  height: 100%;
+  flex-wrap: wrap; }
   .properties .ruler {
-    width: 70%; }
+    width: 70%;
+    min-height: 320px; }
     .properties .ruler .heightPerson {
       width: 55px !important; }
       .properties .ruler .heightPerson .meters {
         font-size: 15px; }
     .properties .ruler #height {
       -webkit-appearance: none;
+      -moz-appearance: none;
       outline: none;
       background: url("../images/background/ruler-height-premed.svg") center no-repeat;
       background-size: 80%;
@@ -5241,228 +5547,89 @@ button {
         background: url("../images/background/line-ruler-premed.svg") center no-repeat;
         background-size: 4px;
         cursor: row-resize; }
-
-/*
-========================================================
-
-                        COLORS
-
-========================================================
-*/
-.color-lightBlue, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
-  color: #45C6D6; }
-
-.background-lightBlue, .steps .bar.active {
-  background-color: #45C6D6; }
-
-.color-white {
-  color: #FFFFFF; }
-
-.background-white {
-  background-color: #FFFFFF; }
-
-.color-lightGrey {
-  color: #F5F7FA; }
-
-.background-lightGrey {
-  background-color: #F5F7FA; }
-
-.color-grey, .md-select [type=button] {
-  color: #D0D4DA; }
-
-.background-grey, .steps .bar, .calendar .divider {
-  background-color: #D0D4DA; }
-
-.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox] {
-  color: #575957; }
-
-.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
-  background-color: #575957; }
-
-.color-violet {
-  color: #B67BE9; }
-
-.background-violet {
-  background-color: #B67BE9; }
-
-.color-lightGreen {
-  color: #50E3C2; }
-
-.background-lightGreen, .goButton:hover {
-  background-color: #50E3C2; }
-
-.color-lightOrange {
-  color: #F6AC56; }
-
-.background-lightOrange {
-  background-color: #F6AC56; }
-
-.color-greenLemon {
-  color: #60D180; }
-
-.background-greenLemon {
-  background-color: #60D180; }
-
-.color-red {
-  color: #E05D6D; }
-
-.background-red {
-  background-color: #E05D6D; }
-
-.color-yellow {
-  color: #F0C70A; }
-
-.background-yellow {
-  background-color: #F0C70A; }
-
-.color-blue {
-  color: #4A90E2; }
-
-.background-blue {
-  background-color: #4A90E2; }
-
-.color-maroon {
-  color: #8B572A; }
-
-.background-maroon {
-  background-color: #8B572A; }
-
-.color-pink {
-  color: #E08ACE; }
-
-.background-pink {
-  background-color: #E08ACE; }
-
-.color-green {
-  color: #23C19E; }
-
-.background-green {
-  background-color: #23C19E; }
-
-/*
-========================================================
-
-                        FONTS
-
-========================================================
-*/
-.font-regular-10px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 10px; }
-
-.font-regular-12px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px; }
-
-.font-regular-15px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 15px; }
-
-.font-regular-20px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 20px; }
-
-.font-regular-35px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 35px; }
-
-.font-medium-10px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 10px; }
-
-.font-medium-12px, .md-select [type=button], .md-select ul[role=listbox] {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 12px; }
-
-.font-medium-15px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 15px; }
-
-.font-medium-20px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 20px; }
-
-.font-medium-35px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 35px; }
-
-.font-semiBold-10px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 10px; }
-
-.font-semiBold-12px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 12px; }
-
-.font-semiBold-15px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 15px; }
-
-.font-semiBold-20px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 20px; }
-
-.font-semiBold-35px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 35px; }
-
-.font-bold-10px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 10px; }
-
-.font-bold-12px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 12px; }
-
-.font-bold-15px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 15px; }
-
-.font-bold-20px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 20px; }
-
-.font-bold-35px {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 35px; }
-
-/*
-========================================================
-
-                        BOX SHADOW
-
-========================================================
-*/
-.shadow-lightBlue {
-  box-shadow: 0 3px 30px #45C6D6; }
-
-.shadow-red {
-  box-shadow: 0 3px 20px #E05D6D; }
-
-.shadow-lightGreen, .goButton:hover {
-  box-shadow: 0 3px 20px #50E3C2; }
-
-.shadow-black, .md-select ul[role=listbox] {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+      .properties .ruler #height::-moz-range-thumb {
+        -webkit-appearance: none;
+        border: none;
+        width: 40px;
+        height: 65px;
+        background: url("../images/background/line-ruler-premed.svg") center no-repeat;
+        background-size: 4px;
+        cursor: row-resize; }
+      .properties .ruler #height::-moz-range-track {
+        -moz-appearance: none;
+        background: none; }
+      .properties .ruler #height::-moz-focusring, .properties .ruler #height:focus {
+        outline: none !important; }
+  .properties .weight {
+    width: 100%; }
+    .properties .weight .errorMin, .properties .weight .errorMax {
+      display: none;
+      clear: both;
+      text-align: center; }
+    .properties .weight .quantity {
+      width: 175px;
+      position: relative;
+      flex-wrap: wrap;
+      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    .properties .weight input[type=number]::-webkit-inner-spin-button,
+    .properties .weight input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .properties .weight input[type=number] {
+      -moz-appearance: textfield;
+      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    .properties .weight input[type=number].inputExpand {
+      width: 120px;
+      margin: 10px 0 0 60px; }
+    .properties .weight .quantity.inputExpand {
+      width: 205px; }
+    .properties .weight .quantity-nav.inputExpand {
+      width: 295px; }
+    .properties .weight p {
+      text-align: center; }
+    .properties .weight .kg {
+      margin-bottom: -10px; }
+    .properties .weight .quantity input {
+      width: 70px;
+      border: 0;
+      text-align: right;
+      background: transparent;
+      margin: 10px 0 0 80px;
+      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    .properties .weight .quantity input:focus {
+      outline: 0; }
+    .properties .weight .quantity-nav {
+      float: left;
+      position: absolute;
+      height: 5px;
+      width: 255px;
+      top: 0;
+      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+      .properties .weight .quantity-nav .quantity-button {
+        position: relative;
+        cursor: pointer;
+        border: 0;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none; }
+      .properties .weight .quantity-nav .quantity-up {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: url("../images/background/plus-button.svg") center no-repeat;
+        background-size: 100%;
+        top: 0;
+        right: 0; }
+      .properties .weight .quantity-nav .quantity-down {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background: url("../images/background/less-button.svg") center no-repeat;
+        background-size: 100%; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2441,6 +2441,16 @@
   font-weight: 400;
   font-size: 35px; }
 
+.font-regular-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px; }
+
+.font-regular-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 50px; }
+
 .font-medium-10px {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -2465,6 +2475,16 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 35px; }
+
+.font-medium-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px; }
+
+.font-medium-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 50px; }
 
 .font-semiBold-10px {
   font-family: "Montserrat", sans-serif;
@@ -2491,6 +2511,16 @@
   font-weight: 600;
   font-size: 35px; }
 
+.font-semiBold-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px; }
+
+.font-semiBold-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px; }
+
 .font-bold-10px {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -2515,6 +2545,16 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 35px; }
+
+.font-bold-40px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px; }
+
+.font-bold-50px {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px; }
 
 /*
 ========================================================

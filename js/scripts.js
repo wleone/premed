@@ -66,10 +66,102 @@ $(document).ready(function() {
 
     $('#height').change(function() {
         var valueInput = $(this)[0].value.split(',')[0];
-        var calc = (valueInput * 120) - 100 + '%';
+        var calc = (valueInput * 100) - 100 + '%';
         var result = Math.floor(calc);
 
         $('.heightPerson').html($(this)[0].value.split(',')[0] + '<span class="meters">m</span>');
         $('.character').css('height', calc);
+    });
+
+    jQuery('<div class="quantity-nav flex-row-between-center-center"><div class="quantity-button quantity-down"></div><div class="quantity-button quantity-up"></div></div>').insertAfter('.kg');
+
+    $('.weight').keyup(function() {
+        setTimeout(function(){
+            input = $('input[type="number"]');
+            var newVal = parseFloat(input.val());
+
+            if( newVal > 200 ){
+                newVal = 200;
+                $('.errorMax').fadeIn();
+                $('.errorMin').fadeOut();
+            }
+
+            if( newVal < 20 ){
+                newVal = 20;
+                $('.errorMin').fadeIn();
+                $('.errorMax').fadeOut();
+            }
+
+            input.val(newVal);
+
+            if( newVal > 99 ){
+              $('.quantity input[type="number"]').addClass('inputExpand');
+              $('.quantity').addClass('inputExpand');
+              $('.quantity-nav').addClass('inputExpand');
+            }
+
+            if( newVal < 100 ){
+              $('.quantity input[type="number"]').removeClass('inputExpand');
+              $('.quantity').removeClass('inputExpand');
+              $('.quantity-nav').removeClass('inputExpand');
+            }
+
+            var calc = newVal / 2;
+            var result = 1 + calc/100.0;
+
+            $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + ');' );
+        }, 3000);
+    });
+
+    jQuery('.quantity').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+        if( newVal > 99 ){
+            $('.quantity input[type="number"]').addClass('inputExpand');
+            $('.quantity').addClass('inputExpand');
+            $('.quantity-nav').addClass('inputExpand');
+        }
+
+        var calc = newVal / 2;
+        var result = 1 + calc/100.0;
+
+        $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + ');' );
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+        if( newVal < 100 ){
+            $('.quantity input[type="number"]').removeClass('inputExpand');
+            $('.quantity').removeClass('inputExpand');
+            $('.quantity-nav').removeClass('inputExpand');
+        }
+
+        var calc = spinner.find("input").val(newVal) / 100;
+        var result = Math.floor(calc);
+
+        $('.character').css('transform', 'translateX(-50%) scaleX(1.' + calc + ');' );
+      });
+
     });
 });
