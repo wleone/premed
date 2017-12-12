@@ -63,6 +63,11 @@ header{
     min-height: 100vh;
     overflow-x: hidden;
 
+    @media screen and (max-width: 1441px){
+        padding-top: 85px;
+        min-height: calc(100vh - 85px);
+    }
+
     @media screen and (max-width: 1025px){
         padding-top: 85px;
         min-height: calc(100vh - 85px);

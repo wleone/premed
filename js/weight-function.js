@@ -25,6 +25,12 @@ $(document).ready(function() {
                 $('.errorMax').fadeOut();
             }
 
+            if ( newVal < 200 && newVal > 20 ) {
+                $('.errorMin').fadeOut();
+                $('.errorMax').fadeOut();
+                console.log('menor que 200');
+            }
+
             input.val(newVal);
 
             var calc = newVal / 2;
@@ -55,6 +61,9 @@ $(document).ready(function() {
             var calc = newVal / 2;
             var result = 1 + calc/200.0;
 
+            $('.errorMin').fadeOut();
+            $('.errorMax').fadeOut();
+
             $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + '); max-height: 90%;' );
         });
 
@@ -71,7 +80,10 @@ $(document).ready(function() {
             var calc = newVal / 2;
             var result = 1 + calc/200.0;
 
-            $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + ');' );
+            $('.errorMin').fadeOut();
+            $('.errorMax').fadeOut();
+
+            $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + '); max-height: 90%;' );
         });
     });
 

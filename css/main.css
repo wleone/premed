@@ -2678,6 +2678,10 @@ header {
 .form-container {
   min-height: 100vh;
   overflow-x: hidden; }
+  @media screen and (max-width: 1441px) {
+    .form-container {
+      padding-top: 85px;
+      min-height: calc(100vh - 85px); } }
   @media screen and (max-width: 1025px) {
     .form-container {
       padding-top: 85px;
@@ -5597,6 +5601,24 @@ button {
     transform: translateX(-50%);
     transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
+.weightPerson {
+  padding-bottom: 20px; }
+  @media screen and (max-width: 880px) {
+    .weightPerson {
+      padding-bottom: 20px;
+      min-height: 340px;
+      width: 25% !important; } }
+  .weightPerson .person {
+    width: 15%; }
+    @media screen and (max-width: 880px) {
+      .weightPerson .person {
+        width: 0%; } }
+  .weightPerson .properties {
+    width: 15%; }
+    @media screen and (max-width: 880px) {
+      .weightPerson .properties {
+        width: 30%; } }
+
 .properties {
   width: 50%;
   height: 100%;
@@ -5727,7 +5749,7 @@ button {
   height: 50px;
   line-height: 50px;
   box-sizing: border-box;
-  padding: 0 10%;
+  padding: 0 30px;
   border-radius: 50px; }
 
 /*# sourceMappingURL=main.css.map */
