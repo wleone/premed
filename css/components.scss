@@ -34,7 +34,7 @@ button{
     width: 180px;
 
     @media screen and (max-width: 1024px){
-        margin-top: 12vh;
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -108,7 +108,11 @@ button{
         flex-wrap: wrap;
 
         @media screen and (max-width: 1024px){
-            min-height: 270px;
+            min-height: 310px;
+        }
+
+        @media screen and (max-width: 870px){
+            min-height: 560px;
         }
 
         .card{
@@ -118,9 +122,10 @@ button{
             overflow: hidden;
             position: relative;
 
-            @media screen and (max-width: 1024px){
-                width: 170px;
+            @media screen and (max-width: 870px){
+                width: 48%;
                 height: 270px;
+                margin: 5px 0;
             }
 
             img{
@@ -180,7 +185,7 @@ button{
         justify-content: center;
         align-items: center;
         align-content: center;
-        margin: 20px 0;
+        margin: 0;
 
         h1, p{
             text-align: center;
@@ -309,6 +314,10 @@ button{
     &.selected {
       @extend .color-lightBlue ;
     }
+
+    @media screen and (max-width: 321px){
+        font-size: 12px;
+    }
   }
   ul[role=listbox] {
     background-color: white;
@@ -403,6 +412,13 @@ button{
     min-height: 400px;
     position: relative;
 
+    @media screen and (max-width: 870px){
+        width: 40%;
+        min-height: 320px;
+        position: absolute;
+        left: 0;
+    }
+
     .character{
         max-height: 100%;
         min-height: 30%;
@@ -426,6 +442,7 @@ button{
         .heightPerson{
             min-width: 55px !important;
             position: absolute;
+            margin-top: 0;
 
             .meters{
                 font-size: 15px;
@@ -481,6 +498,10 @@ button{
     box-sizing: border-box;
     position: relative;
     margin-left: 10%;
+
+    @media screen and (max-width: 870px){
+        margin-left: 0;
+    }
 
     .quantity {
         width: 205px;

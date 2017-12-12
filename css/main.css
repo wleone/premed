@@ -2676,18 +2676,12 @@ header {
   top: 0; }
 
 .form-container {
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
   @media screen and (max-width: 1025px) {
     .form-container {
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: flex-start !important;
-      align-items: center !important;
-      align-content: center !important;
-      padding-top: 2vh; } }
-  @media screen and (max-width: 769px) {
-    .form-container {
-      padding-top: 15vh; } }
+      padding-top: 85px;
+      min-height: calc(100vh - 85px); } }
 
 .wrap {
   margin: 0 auto; }
@@ -5317,7 +5311,7 @@ button {
   width: 180px; }
   @media screen and (max-width: 1024px) {
     .choose-genre {
-      margin-top: 12vh;
+      margin-top: 0;
       margin-bottom: 0; } }
   @media screen and (max-width: 769px) {
     .choose-genre {
@@ -5376,17 +5370,21 @@ button {
     flex-wrap: wrap; }
     @media screen and (max-width: 1024px) {
       .choose-ethnicity .container {
-        min-height: 270px; } }
+        min-height: 310px; } }
+    @media screen and (max-width: 870px) {
+      .choose-ethnicity .container {
+        min-height: 560px; } }
     .choose-ethnicity .container .card {
       width: 200px;
       height: 310px;
       border-radius: 15px;
       overflow: hidden;
       position: relative; }
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 870px) {
         .choose-ethnicity .container .card {
-          width: 170px;
-          height: 270px; } }
+          width: 48%;
+          height: 270px;
+          margin: 5px 0; } }
       .choose-ethnicity .container .card img {
         width: 120px; }
       .choose-ethnicity .container .card .description {
@@ -5428,7 +5426,7 @@ button {
       justify-content: center;
       align-items: center;
       align-content: center;
-      margin: 20px 0; }
+      margin: 0; }
       .contentSteps h1, .contentSteps p {
         text-align: center; }
       .contentSteps h1 {
@@ -5514,6 +5512,9 @@ button {
     outline: none;
     overflow: hidden;
     transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    @media screen and (max-width: 321px) {
+      .md-select [type=button] {
+        font-size: 12px; } }
   .md-select ul[role=listbox] {
     background-color: white;
     cursor: default;
@@ -5581,6 +5582,12 @@ button {
   width: 40%;
   min-height: 400px;
   position: relative; }
+  @media screen and (max-width: 870px) {
+    .person {
+      width: 40%;
+      min-height: 320px;
+      position: absolute;
+      left: 0; } }
   .person .character {
     max-height: 100%;
     min-height: 30%;
@@ -5599,7 +5606,8 @@ button {
     min-height: 390px; }
     .properties .ruler .heightPerson {
       min-width: 55px !important;
-      position: absolute; }
+      position: absolute;
+      margin-top: 0; }
       .properties .ruler .heightPerson .meters {
         font-size: 15px; }
     .properties .ruler #height {
@@ -5641,6 +5649,9 @@ button {
   box-sizing: border-box;
   position: relative;
   margin-left: 10%; }
+  @media screen and (max-width: 870px) {
+    .weight, .height {
+      margin-left: 0; } }
   .weight .quantity, .height .quantity {
     width: 205px;
     position: relative;

@@ -61,17 +61,11 @@ header{
 
 .form-container{
     min-height: 100vh;
+    overflow-x: hidden;
 
     @media screen and (max-width: 1025px){
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: flex-start !important;
-        align-items: center !important;
-        align-content: center !important;
-        padding-top: 2vh;
-    }
-    @media screen and (max-width: 769px){
-        padding-top: 15vh;
+        padding-top: 85px;
+        min-height: calc(100vh - 85px);
     }
 }
 
