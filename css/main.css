@@ -60,6 +60,9 @@
 .flex-wrap {
   flex-wrap: wrap; }
 
+.align-self-center {
+  align-self: center; }
+
 /*
 ====================================================================================================================================================
 ====================================================================================================================================================
@@ -1957,7 +1960,7 @@
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.translate-horizontal {
+.translate-horizontal, .weight .quantity-nav .quantity-up, .height .quantity-nav .quantity-up, .weight .quantity-nav .quantity-down, .height .quantity-nav .quantity-down {
   transform: translateX(-50%); }
 
 .translate-vertical {
@@ -2329,13 +2332,13 @@
 
 ========================================================
 */
-.color-lightBlue, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+.color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
   color: #45C6D6; }
 
 .background-lightBlue, .steps .bar.active {
   background-color: #45C6D6; }
 
-.color-white {
+.color-white, .errorMin, .errorMax {
   color: #FFFFFF; }
 
 .background-white {
@@ -2353,7 +2356,7 @@
 .background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .properties .weight .quantity input {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .weight .quantity input, .height .quantity input {
   color: #575957; }
 
 .background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
@@ -2383,10 +2386,10 @@
 .background-greenLemon {
   background-color: #60D180; }
 
-.color-red, .properties .weight .errorMin, .properties .weight .errorMax {
+.color-red {
   color: #E05D6D; }
 
-.background-red {
+.background-red, .errorMin, .errorMax {
   background-color: #E05D6D; }
 
 .color-yellow {
@@ -2466,12 +2469,12 @@
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px, .md-select [type=button], .md-select ul[role=listbox] {
+.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
 
-.font-medium-15px {
+.font-medium-15px, .md-select [type=button] {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px; }
@@ -2491,7 +2494,7 @@
   font-weight: 500;
   font-size: 40px; }
 
-.font-medium-50px, .properties .weight .quantity input {
+.font-medium-50px, .weight .quantity input, .height .quantity input {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 50px; }
@@ -2576,7 +2579,7 @@
 .shadow-lightBlue {
   box-shadow: 0 3px 30px #45C6D6; }
 
-.shadow-red {
+.shadow-red, .errorMin, .errorMax {
   box-shadow: 0 3px 20px #E05D6D; }
 
 .shadow-lightGreen, .goButton:hover {
@@ -2595,62 +2598,74 @@
 .box {
   box-sizing: border-box; }
   .box.size15 {
-    width: 15%; }
+    width: 15%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size15 {
         width: 100%; } }
   .box.size20 {
-    width: 20%; }
+    width: 20%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size20 {
         width: 100%; } }
   .box.size25 {
-    width: 25%; }
+    width: 25%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size25 {
         width: 100%; } }
   .box.size33 {
-    width: 33.3%; }
+    width: 33.3%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size33 {
         width: 100%; } }
   .box.size50 {
-    width: 50%; }
+    width: 50%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size50 {
         width: 100%; } }
   .box.size55 {
-    width: 55%; }
+    width: 55%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size55 {
         width: 100%; } }
   .box.size60 {
-    width: 66.6%; }
+    width: 66.6%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size60 {
         width: 100%; } }
   .box.size70 {
-    width: 70%; }
+    width: 70%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size70 {
         width: 100%; } }
   .box.size80 {
-    width: 80%; }
+    width: 80%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size80 {
         width: 100%; } }
   .box.size90 {
-    width: 90%; }
+    width: 90%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size90 {
         width: 100%; } }
   .box.size95 {
-    width: 95%; }
+    width: 95%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size95 {
         width: 100%; } }
   .box.size100 {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size100 {
         width: 100%; } }
@@ -2744,6 +2759,9 @@ header {
 .flex-wrap {
   flex-wrap: wrap; }
 
+.align-self-center {
+  align-self: center; }
+
 /*
 ====================================================================================================================================================
 ====================================================================================================================================================
@@ -4641,7 +4659,7 @@ header {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.translate-horizontal {
+.translate-horizontal, .weight .quantity-nav .quantity-up, .height .quantity-nav .quantity-up, .weight .quantity-nav .quantity-down, .height .quantity-nav .quantity-down {
   transform: translateX(-50%); }
 
 .translate-vertical {
@@ -5013,13 +5031,13 @@ header {
 
 ========================================================
 */
-.color-lightBlue, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+.color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
   color: #45C6D6; }
 
 .background-lightBlue, .steps .bar.active {
   background-color: #45C6D6; }
 
-.color-white {
+.color-white, .errorMin, .errorMax {
   color: #FFFFFF; }
 
 .background-white {
@@ -5037,7 +5055,7 @@ header {
 .background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .properties .weight .quantity input {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .weight .quantity input, .height .quantity input {
   color: #575957; }
 
 .background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
@@ -5067,10 +5085,10 @@ header {
 .background-greenLemon {
   background-color: #60D180; }
 
-.color-red, .properties .weight .errorMin, .properties .weight .errorMax {
+.color-red {
   color: #E05D6D; }
 
-.background-red {
+.background-red, .errorMin, .errorMax {
   background-color: #E05D6D; }
 
 .color-yellow {
@@ -5150,12 +5168,12 @@ header {
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px, .md-select [type=button], .md-select ul[role=listbox] {
+.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
 
-.font-medium-15px {
+.font-medium-15px, .md-select [type=button] {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 15px; }
@@ -5175,7 +5193,7 @@ header {
   font-weight: 500;
   font-size: 40px; }
 
-.font-medium-50px, .properties .weight .quantity input {
+.font-medium-50px, .weight .quantity input, .height .quantity input {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 50px; }
@@ -5260,7 +5278,7 @@ header {
 .shadow-lightBlue {
   box-shadow: 0 3px 30px #45C6D6; }
 
-.shadow-red {
+.shadow-red, .errorMin, .errorMax {
   box-shadow: 0 3px 20px #E05D6D; }
 
 .shadow-lightGreen, .goButton:hover {
@@ -5274,7 +5292,14 @@ a, button, input[type="submit"], input[type="file"] {
   outline: none; }
 
 .link {
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
+
+.back {
+  padding-left: 30px;
+  margin-left: -25px;
+  background: url("../images/background/icon-back.svg") left center no-repeat;
+  background-size: 22px; }
 
 button {
   border: 0; }
@@ -5392,17 +5417,24 @@ button {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-@media screen and (max-width: 1024px) {
-  .contentSteps {
-    width: 60% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    align-content: center !important;
-    margin: 40px 0; }
-    .contentSteps h1, .contentSteps p {
-      text-align: center; } }
+.contentSteps {
+  width: 220px; }
+  @media screen and (max-width: 1024px) {
+    .contentSteps {
+      box-sizing: border-box;
+      padding: 0 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 20px 0; }
+      .contentSteps h1, .contentSteps p {
+        text-align: center; }
+      .contentSteps h1 {
+        font-size: 20px; }
+      .contentSteps p {
+        margin-bottom: 40px; } }
 
 .steps {
   width: 220px;
@@ -5413,6 +5445,9 @@ button {
     border-radius: 50px;
     margin: 0 6px;
     transition-duration: 0.25s; }
+  @media screen and (max-width: 415px) {
+    .steps p {
+      margin-bottom: 10px; } }
 
 .goButton {
   width: 220px;
@@ -5431,19 +5466,38 @@ button {
 ====================================================================================================================================================
 */
 .calendar {
-  width: 280px;
-  height: 205px;
+  width: 380px;
+  min-height: 250px;
+  max-width: 100%;
   background: url("../images/background/calendar-premed.svg") center top no-repeat;
   background-size: 90%;
-  padding: 10px 20px 0;
+  padding: 25px 20px 0;
   flex-wrap: wrap; }
+  @media screen and (max-width: 415px) {
+    .calendar {
+      padding: 5% 5% 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      min-height: 235px; } }
+  @media screen and (max-width: 321px) {
+    .calendar {
+      padding: 0 5% 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      min-height: 220px; } }
   .calendar .divider {
     width: 50%;
     height: 1px;
-    margin: 5px 5%; }
+    margin: 10px 5%; }
+    @media screen and (max-width: 415px) {
+      .calendar .divider {
+        margin: 0 5%; } }
 
 .md-select {
   width: 45%; }
+  @media screen and (max-width: 415px) {
+    .md-select {
+      margin: 2.5% 0 !important; } }
   .md-select [type=button] {
     background: rgba(255, 255, 255, 0);
     border: 0;
@@ -5525,11 +5579,11 @@ button {
 
 .person {
   width: 40%;
-  min-height: 465px;
+  min-height: 400px;
   position: relative; }
   .person .character {
-    max-height: 120%;
-    min-height: 70%;
+    max-height: 100%;
+    min-height: 30%;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -5537,14 +5591,15 @@ button {
     transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 .properties {
-  width: 60%;
+  width: 50%;
   height: 100%;
   flex-wrap: wrap; }
   .properties .ruler {
     width: 70%;
-    min-height: 320px; }
+    min-height: 390px; }
     .properties .ruler .heightPerson {
-      width: 55px !important; }
+      min-width: 55px !important;
+      position: absolute; }
       .properties .ruler .heightPerson .meters {
         font-size: 15px; }
     .properties .ruler #height {
@@ -5553,21 +5608,19 @@ button {
       outline: none;
       background: url("../images/background/ruler-height-premed.svg") center no-repeat;
       background-size: 80%;
-      width: 365px;
-      height: 30px;
       max-width: 365px;
       max-height: 30px;
-      -webkit-transform: rotate(-90deg) scale(2.4);
-      -moz-transform: rotate(-90deg) scale(2.4);
-      transform: rotate(-90deg) scale(2.45);
-      z-index: 0; }
+      -webkit-transform: rotate(-90deg) scale(3.5);
+      -moz-transform: rotate(-90deg) scale(3.5);
+      transform: rotate(-90deg) scale(3.5);
+      z-index: 20; }
       .properties .ruler #height::-webkit-slider-thumb {
         -webkit-appearance: none;
         border: none;
-        width: 40px;
+        width: 30px;
         height: 65px;
         background: url("../images/background/line-ruler-premed.svg") center no-repeat;
-        background-size: 4px;
+        background-size: 3px;
         cursor: row-resize; }
       .properties .ruler #height::-moz-range-thumb {
         -webkit-appearance: none;
@@ -5575,83 +5628,95 @@ button {
         width: 40px;
         height: 65px;
         background: url("../images/background/line-ruler-premed.svg") center no-repeat;
-        background-size: 4px;
+        background-size: 3px;
         cursor: row-resize; }
       .properties .ruler #height::-moz-range-track {
         -moz-appearance: none;
         background: none; }
       .properties .ruler #height::-moz-focusring, .properties .ruler #height:focus {
         outline: none !important; }
-  .properties .weight {
-    width: 100%; }
-    .properties .weight .errorMin, .properties .weight .errorMax {
-      display: none;
-      clear: both;
-      text-align: center; }
-    .properties .weight .quantity {
-      width: 175px;
+
+.weight, .height {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 10%; }
+  .weight .quantity, .height .quantity {
+    width: 205px;
+    position: relative;
+    flex-wrap: wrap;
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+  .weight input[type=number]::-webkit-inner-spin-button,
+  .weight input[type=number]::-webkit-outer-spin-button, .height input[type=number]::-webkit-inner-spin-button,
+  .height input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .weight input[type=number], .height input[type=number] {
+    margin: 10px 0 0 0;
+    text-align: right;
+    -moz-appearance: textfield;
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+  .weight p, .height p {
+    text-align: center; }
+  .weight .kg, .height .kg {
+    margin-bottom: -10px;
+    margin-right: 15%; }
+  .weight .meters, .height .meters {
+    position: absolute;
+    right: -40%; }
+  .weight .quantity input, .height .quantity input {
+    width: 120px;
+    border: 0;
+    text-align: right;
+    background: transparent;
+    margin: 10px 0 0 0;
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+  .weight .quantity input:focus, .height .quantity input:focus {
+    outline: 0; }
+  .weight .quantity-nav, .height .quantity-nav {
+    float: left;
+    position: absolute;
+    height: 20%;
+    width: 295px;
+    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    .weight .quantity-nav .quantity-button, .height .quantity-nav .quantity-button {
       position: relative;
-      flex-wrap: wrap;
-      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
-    .properties .weight input[type=number]::-webkit-inner-spin-button,
-    .properties .weight input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0; }
-    .properties .weight input[type=number] {
-      -moz-appearance: textfield;
-      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
-    .properties .weight input[type=number].inputExpand {
-      width: 120px;
-      margin: 10px 0 0 60px; }
-    .properties .weight .quantity.inputExpand {
-      width: 205px; }
-    .properties .weight .quantity-nav.inputExpand {
-      width: 295px; }
-    .properties .weight p {
-      text-align: center; }
-    .properties .weight .kg {
-      margin-bottom: -10px; }
-    .properties .weight .quantity input {
-      width: 70px;
+      cursor: pointer;
       border: 0;
-      text-align: right;
-      background: transparent;
-      margin: 10px 0 0 80px;
-      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
-    .properties .weight .quantity input:focus {
-      outline: 0; }
-    .properties .weight .quantity-nav {
-      float: left;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none; }
+    .weight .quantity-nav .quantity-up, .height .quantity-nav .quantity-up {
       position: absolute;
-      height: 5px;
-      width: 255px;
-      top: 0;
-      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
-      .properties .weight .quantity-nav .quantity-button {
-        position: relative;
-        cursor: pointer;
-        border: 0;
-        text-align: center;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none; }
-      .properties .weight .quantity-nav .quantity-up {
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        background: url("../images/background/plus-button.svg") center no-repeat;
-        background-size: 100%;
-        top: 0;
-        right: 0; }
-      .properties .weight .quantity-nav .quantity-down {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80px;
-        height: 80px;
-        background: url("../images/background/less-button.svg") center no-repeat;
-        background-size: 100%; }
+      width: 80px;
+      height: 80px;
+      background: url("../images/background/plus-button.svg") center no-repeat;
+      background-size: 100%;
+      top: -70px;
+      left: 50%; }
+    .weight .quantity-nav .quantity-down, .height .quantity-nav .quantity-down {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: url("../images/background/less-button.svg") center no-repeat;
+      background-size: 100%;
+      top: 70px;
+      left: 50%; }
+
+.errorMin, .errorMax {
+  display: none;
+  clear: both;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  padding: 0 10%;
+  border-radius: 50px; }
 
 /*# sourceMappingURL=main.css.map */

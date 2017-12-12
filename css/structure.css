@@ -59,6 +59,9 @@
 .flex-wrap {
   flex-wrap: wrap; }
 
+.align-self-center {
+  align-self: center; }
+
 /*
 ====================================================================================================================================================
 ====================================================================================================================================================
@@ -2594,62 +2597,74 @@
 .box {
   box-sizing: border-box; }
   .box.size15 {
-    width: 15%; }
+    width: 15%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size15 {
         width: 100%; } }
   .box.size20 {
-    width: 20%; }
+    width: 20%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size20 {
         width: 100%; } }
   .box.size25 {
-    width: 25%; }
+    width: 25%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size25 {
         width: 100%; } }
   .box.size33 {
-    width: 33.3%; }
+    width: 33.3%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size33 {
         width: 100%; } }
   .box.size50 {
-    width: 50%; }
+    width: 50%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size50 {
         width: 100%; } }
   .box.size55 {
-    width: 55%; }
+    width: 55%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size55 {
         width: 100%; } }
   .box.size60 {
-    width: 66.6%; }
+    width: 66.6%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size60 {
         width: 100%; } }
   .box.size70 {
-    width: 70%; }
+    width: 70%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size70 {
         width: 100%; } }
   .box.size80 {
-    width: 80%; }
+    width: 80%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size80 {
         width: 100%; } }
   .box.size90 {
-    width: 90%; }
+    width: 90%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size90 {
         width: 100%; } }
   .box.size95 {
-    width: 95%; }
+    width: 95%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size95 {
         width: 100%; } }
   .box.size100 {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     @media screen and (max-width: 1024px) {
       .box.size100 {
         width: 100%; } }
