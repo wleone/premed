@@ -340,6 +340,14 @@ button{
 ====================================================================================================================================================
 */
 
+.info-user{
+    @extend .flex-row-center-center-center ;
+
+    @media screen and (max-width: 1441px){
+        flex-direction: row;
+    }
+}
+
 .person{
     width: 40%;
     min-height: 465px;

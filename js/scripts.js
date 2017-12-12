@@ -108,8 +108,10 @@ $(document).ready(function() {
 
             var calc = newVal / 2;
             var result = 1 + calc/100.0;
+            var height = $('.character').height();
 
-            $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + ');' );
+            $('.character').removeAttr('style');
+            $('.character').attr('style', 'height:' + height + 'px;' + 'transform: translateX(-50%) scaleX(' + result + ');' );
         }, 3000);
     });
 
@@ -138,8 +140,11 @@ $(document).ready(function() {
 
         var calc = newVal / 2;
         var result = 1 + calc/100.0;
+        var height = $('.character').height();
 
-        $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + ');' );
+
+        $('.character').removeAttr('style');
+        $('.character').attr('style', 'height:' + height + 'px;' + 'transform: translateX(-50%) scaleX(' + result + ');' );
       });
 
       btnDown.click(function() {
@@ -157,10 +162,13 @@ $(document).ready(function() {
             $('.quantity-nav').removeClass('inputExpand');
         }
 
-        var calc = spinner.find("input").val(newVal) / 100;
-        var result = Math.floor(calc);
+        var calc = newVal / 2;
+        var result = 1 + calc/100.0;
+        var height = $('.character').height();
 
-        $('.character').css('transform', 'translateX(-50%) scaleX(1.' + calc + ');' );
+
+        $('.character').removeAttr('style');
+        $('.character').attr('style', 'height:' + height + 'px;' + 'transform: translateX(-50%) scaleX(' + result + ');' );
       });
 
     });

@@ -51,6 +51,15 @@
   align-content: space-between;
   align-items: center; }
 
+.row-reverse {
+  flex-direction: row-reverse; }
+
+.column-reverse {
+  flex-direction: column-reverse; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
 /*
 ====================================================================================================================================================
 ====================================================================================================================================================
@@ -88,7 +97,7 @@
   align-items: center;
   align-content: center; }
 
-.flex-row-center-center-center {
+.flex-row-center-center-center, .info-user {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2726,6 +2735,15 @@ header {
   align-content: space-between;
   align-items: center; }
 
+.row-reverse {
+  flex-direction: row-reverse; }
+
+.column-reverse {
+  flex-direction: column-reverse; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
 /*
 ====================================================================================================================================================
 ====================================================================================================================================================
@@ -2763,7 +2781,7 @@ header {
   align-items: center;
   align-content: center; }
 
-.flex-row-center-center-center {
+.flex-row-center-center-center, .info-user {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -5501,6 +5519,10 @@ button {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
+@media screen and (max-width: 1441px) {
+  .info-user {
+    flex-direction: row; } }
+
 .person {
   width: 40%;
   min-height: 465px;
