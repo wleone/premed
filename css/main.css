@@ -2595,7 +2595,7 @@
 
 ========================================================
 */
-.transition-cubic, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+.transition-cubic, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
@@ -5302,7 +5302,7 @@ header {
 
 ========================================================
 */
-.transition-cubic, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+.transition-cubic, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 a, button, input[type="submit"], input[type="file"] {
@@ -5406,7 +5406,8 @@ button {
       height: 310px;
       border-radius: 15px;
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       @media screen and (max-width: 870px) {
         .choose-ethnicity .container .card {
           width: 48%;

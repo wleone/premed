@@ -20,4 +20,60 @@ jQuery(document).ready(function($) {
                 $('.choose-ethnicity .male').css('display','flex');
             }, 500);
     });
+
+    $('.choose-ethnicity .male .card.masculino.afrodescendente').click(function(event) {
+        $('.male .card.masculino.afrodescendente').css('opacity', '1').addClass('active');
+        $('.male .card.masculino.caucasiano').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.asiatico').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.outro').css('opacity', '0.5').removeClass('active');
+    });
+
+    $('.choose-ethnicity .male .card.masculino.caucasiano').click(function(event) {
+        $('.male .card.masculino.afrodescendente').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.caucasiano').css('opacity', '1').addClass('active');
+        $('.male .card.masculino.asiatico').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.outro').css('opacity', '0.5').removeClass('active');
+    });
+
+    $('.choose-ethnicity .male .card.masculino.asiatico').click(function(event) {
+        $('.male .card.masculino.afrodescendente').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.caucasiano').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.asiatico').css('opacity', '1').addClass('active');
+        $('.male .card.masculino.outro').css('opacity', '0.5').removeClass('active');
+    });
+
+    $('.choose-ethnicity .male .card.masculino.outro').click(function(event) {
+        $('.male .card.masculino.afrodescendente').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.caucasiano').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.asiatico').css('opacity', '0.5').removeClass('active');
+        $('.male .card.masculino.outro').css('opacity', '1').addClass('active');
+    });
+
+    $('.choose-ethnicity .female .card.feminino.afrodescendente').click(function(event) {
+        $('.female .card.feminino.afrodescendente').css('opacity', '1').addClass('active');
+        $('.female .card.feminino.caucasiano').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.asiatico').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.outro').css('opacity', '0.5').removeClass('active');
+    });
+
+    $('.choose-ethnicity .female .card.feminino.caucasiano').click(function(event) {
+        $('.female .card.feminino.afrodescendente').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.caucasiano').css('opacity', '1').addClass('active');
+        $('.female .card.feminino.asiatico').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.outro').css('opacity', '0.5').removeClass('active');
+    });
+
+    $('.choose-ethnicity .female .card.feminino.asiatico').click(function(event) {
+        $('.female .card.feminino.afrodescendente').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.caucasiano').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.asiatico').css('opacity', '1').addClass('active');
+        $('.female .card.feminino.outro').css('opacity', '0.5').removeClass('active');
+    });
+
+    $('.choose-ethnicity .female .card.feminino.outro').click(function(event) {
+        $('.female .card.feminino.afrodescendente').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.caucasiano').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.asiatico').css('opacity', '0.5').removeClass('active');
+        $('.female .card.feminino.outro').css('opacity', '1').addClass('active');
+    });
 });

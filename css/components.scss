@@ -125,6 +125,8 @@ button{
             border-radius: 15px;
             overflow: hidden;
             position: relative;
+            cursor: pointer;
+            @extend .transition-cubic ;
 
             @media screen and (max-width: 870px){
                 width: 48%;
