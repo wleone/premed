@@ -16,17 +16,15 @@
             <div class="info-user wrap box size100 flex-row-between-center-center">
 
                 <div class="box size60 flex-column-center-between-center">
-                    <p class="w-90p font-medium-15px color-black m-bottom-10px text-align-center">Qual é a sua altura?</p>
-                    <div class="box size33 flex-row-center-center-center">
-                        <div class="person">
-                            <img id="character" class="character" src="images/characters/white-man.svg" alt="">
+                    <p class="w-90p font-medium-15px color-black text-align-center">Você está ou acha que pode estar grávida?</p>
+                    <div class="optionForm m-top-30px flex-row-center-center-center">
+                        <div class="contentButtons flex-row-start-start-center flex-wrap">
+                            <button type="button" name="button" class="buttonSelect first" value="true">Sim</button>
+                            <button type="button" name="button" class="buttonSelect second" value="false">Não</button>
                         </div>
-                        <div class="weight properties flex-column-center-center-center">
-                            <div class="quantity ruler flex-row-between-center-center m-bottom-20px">
-                                <input type="number" value="1.60" class="heightPerson top-50p left-70p translate-vertical font-medium-35px color-black m-top-20px m-20px" />
-                                <p class="meters font-medium-20px color-black m-top-10px m-bottom-20px top-50p translate-vertical">m</p>
-                                <input id="height" type="range" min="0.50" max="2.35" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" />
-                            </div>
+                        <div class="illustrations pregnancy">
+                            <img src="images/characters/pregnancy_false.svg" alt="" class="false top-50p translate-vertical">
+                            <img src="images/characters/pregnancy_true.svg" alt="" class="true top-50p translate-vertical">
                         </div>
                     </div>
                 </div>
@@ -36,16 +34,16 @@
             <div class="box contentSteps flex-column-start-start-start m-top-40px">
                 <button type="button" name="button" class="goButton background-lightBlue color-white shadow-lightBlue">Próximas perguntas</button>
                 <div class="w-100p flex-column-center-center-center m-top-30px font-regular-15px">
-                    <a href="birthday.html" title="" class="link back">Voltar</a>
+                    <a href="height.html" title="" class="link back">Voltar</a>
                 </div>
                 <div class="steps m-top-30px">
-                    <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">3 / 5</p>
+                    <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">6 / 6</p>
                     <div class="bars flex-row-around-center-center">
                         <div class="bar active"></div>
                         <div class="bar active"></div>
                         <div class="bar active"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                        <div class="bar active"></div>
+                        <div class="bar active"></div>
                     </div>
                 </div>
             </div>
@@ -53,11 +51,11 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/height-function.js" type="text/javascript"></script>
+        <script src="js/pregnancy-function.js" type="text/javascript"></script>
         <script type="text/javascript">
             $('.goButton').click(function(event) {
-                url = 'weight.html';
-                window.location.replace(url);
+                // url = 'circumference.html';
+                // window.location.replace(url);
             });
         </script>
     </body>

@@ -2335,13 +2335,13 @@
 .color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
   color: #45C6D6; }
 
-.background-lightBlue, .steps .bar.active {
+.background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   background-color: #45C6D6; }
 
-.color-white, .errorMin, .errorMax {
+.color-white, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   color: #FFFFFF; }
 
-.background-white {
+.background-white, .optionForm .contentButtons button {
   background-color: #FFFFFF; }
 
 .color-lightGrey {
@@ -2356,10 +2356,10 @@
 .background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .weight .quantity input, .height .quantity input {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .weight .quantity input, .height .quantity input, .optionForm .contentButtons button {
   color: #575957; }
 
-.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
+.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb, .optionForm .contentButtons button:hover {
   background-color: #575957; }
 
 .color-violet {
@@ -2469,7 +2469,7 @@
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax {
+.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax, .optionForm .contentButtons button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
@@ -2576,7 +2576,7 @@
 
 ========================================================
 */
-.shadow-lightBlue {
+.shadow-lightBlue, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   box-shadow: 0 3px 30px #45C6D6; }
 
 .shadow-red, .errorMin, .errorMax {
@@ -2585,8 +2585,18 @@
 .shadow-lightGreen, .goButton:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
-.shadow-black, .md-select ul[role=listbox] {
+.shadow-black, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+
+/*
+========================================================
+
+                        TRANSITIONS
+
+========================================================
+*/
+.transition-cubic, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+  transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
   margin: 0;
@@ -5032,13 +5042,13 @@ header {
 .color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
   color: #45C6D6; }
 
-.background-lightBlue, .steps .bar.active {
+.background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   background-color: #45C6D6; }
 
-.color-white, .errorMin, .errorMax {
+.color-white, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   color: #FFFFFF; }
 
-.background-white {
+.background-white, .optionForm .contentButtons button {
   background-color: #FFFFFF; }
 
 .color-lightGrey {
@@ -5053,10 +5063,10 @@ header {
 .background-grey, .steps .bar, .calendar .divider {
   background-color: #D0D4DA; }
 
-.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .weight .quantity input, .height .quantity input {
+.color-black, .md-select [type=button]:focus, .md-select [type=button]:hover, .md-select ul[role=listbox], .weight .quantity input, .height .quantity input, .optionForm .contentButtons button {
   color: #575957; }
 
-.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb {
+.background-black, .md-select ul[role=listbox]::-webkit-scrollbar-thumb, .optionForm .contentButtons button:hover {
   background-color: #575957; }
 
 .color-violet {
@@ -5166,7 +5176,7 @@ header {
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax {
+.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax, .optionForm .contentButtons button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
@@ -5273,7 +5283,7 @@ header {
 
 ========================================================
 */
-.shadow-lightBlue {
+.shadow-lightBlue, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   box-shadow: 0 3px 30px #45C6D6; }
 
 .shadow-red, .errorMin, .errorMax {
@@ -5282,8 +5292,18 @@ header {
 .shadow-lightGreen, .goButton:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
-.shadow-black, .md-select ul[role=listbox] {
+.shadow-black, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+
+/*
+========================================================
+
+                        TRANSITIONS
+
+========================================================
+*/
+.transition-cubic, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+  transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 a, button, input[type="submit"], input[type="file"] {
   cursor: pointer;
@@ -5378,6 +5398,9 @@ button {
     @media screen and (max-width: 870px) {
       .choose-ethnicity .container {
         min-height: 560px; } }
+    @media screen and (max-width: 650px) {
+      .choose-ethnicity .container {
+        min-height: 330px; } }
     .choose-ethnicity .container .card {
       width: 200px;
       height: 310px;
@@ -5389,8 +5412,15 @@ button {
           width: 48%;
           height: 270px;
           margin: 5px 0; } }
+      @media screen and (max-width: 650px) {
+        .choose-ethnicity .container .card {
+          height: 145px; } }
       .choose-ethnicity .container .card img {
         width: 120px; }
+        @media screen and (max-width: 650px) {
+          .choose-ethnicity .container .card img {
+            width: 60px;
+            margin-top: 5px; } }
       .choose-ethnicity .container .card .description {
         width: 100%;
         height: 65px;
@@ -5407,6 +5437,9 @@ button {
           @media screen and (max-width: 1024px) {
             .choose-ethnicity .container .card .description small {
               font-size: 9px; } }
+          @media screen and (max-width: 650px) {
+            .choose-ethnicity .container .card .description small {
+              font-size: 12px; } }
   .choose-ethnicity .container.female {
     display: none; }
 
@@ -5437,15 +5470,21 @@ button {
         font-size: 20px; }
       .contentSteps p {
         margin-bottom: 40px; } }
+  @media screen and (max-width: 650px) {
+    .contentSteps {
+      padding-bottom: 40px; } }
 
 .steps {
   width: 220px;
   box-sizing: border-box; }
+  @media screen and (max-width: 650px) {
+    .steps {
+      margin-top: 15px; } }
   .steps .bar {
     width: 100%;
     height: 3px;
     border-radius: 50px;
-    margin: 0 6px;
+    margin: 0 5px;
     transition-duration: 0.25s; }
   @media screen and (max-width: 415px) {
     .steps p {
@@ -5514,8 +5553,7 @@ button {
     width: 100%;
     z-index: 1;
     outline: none;
-    overflow: hidden;
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    overflow: hidden; }
     @media screen and (max-width: 321px) {
       .md-select [type=button] {
         font-size: 12px; } }
@@ -5531,7 +5569,6 @@ button {
     padding: 0;
     border-radius: 10px;
     transform: translateY(-60%) translateX(-10%);
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
     width: 170px;
     height: 110px; }
     .md-select ul[role=listbox]::-webkit-scrollbar-track {
@@ -5559,8 +5596,7 @@ button {
       outline: none;
       overflow: hidden;
       text-align: center;
-      cursor: pointer;
-      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+      cursor: pointer; }
   .md-select.active ul {
     max-height: 200px;
     overflow: auto;
@@ -5598,8 +5634,7 @@ button {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%);
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    transform: translateX(-50%); }
 
 .weightPerson {
   padding-bottom: 20px; }
@@ -5607,17 +5642,20 @@ button {
     .weightPerson {
       padding-bottom: 20px;
       min-height: 340px;
-      width: 25% !important; } }
+      width: 100% !important; } }
   .weightPerson .person {
     width: 15%; }
     @media screen and (max-width: 880px) {
       .weightPerson .person {
-        width: 0%; } }
+        width: 50%; } }
+    @media screen and (max-width: 650px) {
+      .weightPerson .person {
+        left: 5%; } }
   .weightPerson .properties {
     width: 15%; }
     @media screen and (max-width: 880px) {
       .weightPerson .properties {
-        width: 30%; } }
+        width: 100%; } }
 
 .properties {
   width: 50%;
@@ -5630,6 +5668,10 @@ button {
       min-width: 55px !important;
       position: absolute;
       margin-top: 0; }
+      @media screen and (max-width: 650px) {
+        .properties .ruler .heightPerson {
+          right: 10%;
+          left: auto; } }
       .properties .ruler .heightPerson .meters {
         font-size: 15px; }
     .properties .ruler #height {
@@ -5644,13 +5686,17 @@ button {
       -moz-transform: rotate(-90deg) scale(3.5);
       transform: rotate(-90deg) scale(3.5);
       z-index: 20; }
+      @media screen and (max-width: 650px) {
+        .properties .ruler #height {
+          margin-left: 20%;
+          left: 0; } }
       .properties .ruler #height::-webkit-slider-thumb {
         -webkit-appearance: none;
         border: none;
         width: 30px;
         height: 65px;
         background: url("../images/background/line-ruler-premed.svg") center no-repeat;
-        background-size: 3px;
+        background-size: 2px;
         cursor: row-resize; }
       .properties .ruler #height::-moz-range-thumb {
         -webkit-appearance: none;
@@ -5658,7 +5704,7 @@ button {
         width: 40px;
         height: 65px;
         background: url("../images/background/line-ruler-premed.svg") center no-repeat;
-        background-size: 3px;
+        background-size: 2px;
         cursor: row-resize; }
       .properties .ruler #height::-moz-range-track {
         -moz-appearance: none;
@@ -5677,8 +5723,13 @@ button {
   .weight .quantity, .height .quantity {
     width: 205px;
     position: relative;
-    flex-wrap: wrap;
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    flex-wrap: wrap; }
+    @media screen and (max-width: 650px) {
+      .weight .quantity, .height .quantity {
+        width: 90%; } }
+  @media screen and (max-width: 650px) {
+    .weight .quantity.weight, .height .quantity.weight {
+      min-height: 50px; } }
   .weight input[type=number]::-webkit-inner-spin-button,
   .weight input[type=number]::-webkit-outer-spin-button, .height input[type=number]::-webkit-inner-spin-button,
   .height input[type=number]::-webkit-outer-spin-button {
@@ -5687,23 +5738,45 @@ button {
   .weight input[type=number], .height input[type=number] {
     margin: 10px 0 0 0;
     text-align: right;
-    -moz-appearance: textfield;
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    -moz-appearance: textfield; }
   .weight p, .height p {
     text-align: center; }
   .weight .kg, .height .kg {
     margin-bottom: -10px;
     margin-right: 15%; }
+    @media screen and (max-width: 880px) {
+      .weight .kg, .height .kg {
+        right: -15%; } }
+    @media screen and (max-width: 650px) {
+      .weight .kg, .height .kg {
+        margin-bottom: 0;
+        margin-top: 15px;
+        right: 2%;
+        margin-right: 0;
+        position: absolute; } }
   .weight .meters, .height .meters {
     position: absolute;
     right: -40%; }
+    @media screen and (max-width: 880px) {
+      .weight .meters, .height .meters {
+        right: -15%; } }
+    @media screen and (max-width: 650px) {
+      .weight .meters, .height .meters {
+        margin-bottom: 0;
+        margin-top: 5px;
+        right: 3%; } }
   .weight .quantity input, .height .quantity input {
     width: 120px;
     border: 0;
     text-align: right;
     background: transparent;
-    margin: 10px 0 0 0;
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    margin: 10px 0 0 0; }
+    @media screen and (max-width: 650px) {
+      .weight .quantity input, .height .quantity input {
+        font-size: 35px;
+        position: absolute;
+        left: auto;
+        right: 10%; } }
   .weight .quantity input:focus, .height .quantity input:focus {
     outline: 0; }
   .weight .quantity-nav, .height .quantity-nav {
@@ -5711,7 +5784,12 @@ button {
     position: absolute;
     height: 20%;
     width: 295px;
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
+    z-index: 40; }
+    @media screen and (max-width: 650px) {
+      .weight .quantity-nav, .height .quantity-nav {
+        width: 45px;
+        right: 10%;
+        left: auto; } }
     .weight .quantity-nav .quantity-button, .height .quantity-nav .quantity-button {
       position: relative;
       cursor: pointer;
@@ -5751,5 +5829,64 @@ button {
   box-sizing: border-box;
   padding: 0 30px;
   border-radius: 50px; }
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                PANTS COMPONENT
+                                            (Used on PreMed Circumference)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+.optionForm {
+  width: 100%;
+  max-width: 765px;
+  box-sizing: border-box; }
+  @media screen and (max-width: 880px) {
+    .optionForm {
+      flex-direction: column-reverse;
+      margin-bottom: 30px; } }
+  .optionForm .illustrations {
+    width: 40%;
+    min-height: 380px;
+    margin: 0 5%;
+    position: relative;
+    box-sizing: border-box; }
+    @media screen and (max-width: 880px) {
+      .optionForm .illustrations {
+        min-height: 250px;
+        margin-bottom: 20px; } }
+    .optionForm .illustrations img {
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      left: 50%; }
+    .optionForm .illustrations.circumference .stretchPants {
+      transform: translateY(-50%) translateX(-50%) scaleX(1.5); }
+    @media screen and (max-width: 880px) {
+      .optionForm .illustrations.pregnancy {
+        height: 250px;
+        min-width: 200px; }
+        .optionForm .illustrations.pregnancy img {
+          left: 20%; } }
+    @media screen and (max-width: 650px) {
+      .optionForm .illustrations.pregnancy img {
+        left: 10%; } }
+  .optionForm .contentButtons {
+    width: 60%;
+    box-sizing: border-box; }
+    @media screen and (max-width: 615px) {
+      .optionForm .contentButtons {
+        width: 100%;
+        padding: 0 1%; } }
+    .optionForm .contentButtons button {
+      width: 48%;
+      height: 40px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 10px;
+      margin: 1.5% 1%; }
 
 /*# sourceMappingURL=main.css.map */

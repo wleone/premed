@@ -115,6 +115,10 @@ button{
             min-height: 560px;
         }
 
+        @media screen and (max-width: 650px){
+            min-height: 330px;
+        }
+
         .card{
             width: 200px;
             height: 310px;
@@ -128,8 +132,17 @@ button{
                 margin: 5px 0;
             }
 
+            @media screen and (max-width: 650px){
+                height: 145px;
+            }
+
             img{
                 width: 120px;
+
+                @media screen and (max-width: 650px){
+                    width: 60px;
+                    margin-top: 5px;
+                }
             }
 
             .description{
@@ -153,6 +166,10 @@ button{
 
                     @media screen and (max-width: 1024px){
                         font-size: 9px;
+                    }
+
+                    @media screen and (max-width: 650px){
+                        font-size: 12px;
                     }
                 }
             }
@@ -199,17 +216,25 @@ button{
             margin-bottom: 40px;
         }
     }
+
+    @media screen and (max-width: 650px){
+        padding-bottom: 40px;
+    }
 }
 
 .steps{
     width: 220px;
     box-sizing: border-box;
 
+    @media screen and (max-width: 650px){
+        margin-top: 15px;
+    }
+
     .bar{
         width: 100%;
         height: 3px;
         border-radius: 50px;
-        margin: 0 6px;
+        margin: 0 5px;
         @extend .background-grey ;
         transition-duration: 0.25s;
     }
@@ -304,7 +329,7 @@ button{
     z-index: 1;
     outline: none;
     overflow: hidden;
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    @extend .transition-cubic ;
     @extend .font-medium-15px ;
     @extend .color-grey ;
 
@@ -331,7 +356,7 @@ button{
     padding: 0;
     border-radius: 10px;
     transform: translateY(-60%) translateX(-10%);
-    transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+    @extend .transition-cubic ;
     width: 170px;
     height: 110px;
     @extend .font-medium-12px ;
@@ -371,7 +396,7 @@ button{
       overflow: hidden;
       text-align: center;
       cursor: pointer;
-      transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+      @extend .transition-cubic ;
 
       &:focus, &:hover, &.active {
         @extend .color-lightBlue ;
@@ -426,7 +451,7 @@ button{
         left: 50%;
         bottom: 0;
         transform: translateX(-50%);
-        transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        @extend .transition-cubic ;
     }
 }
 
@@ -436,21 +461,25 @@ button{
     @media screen and (max-width: 880px){
         padding-bottom: 20px;
         min-height: 340px;
-        width: 25% !important;
+        width: 100% !important;
     }
 
     .person{
         width: 15%;
 
         @media screen and (max-width: 880px){
-            width: 0%;
+            width: 50%;
+        }
+
+        @media screen and (max-width: 650px){
+            left: 5%;
         }
     }
     .properties{
         width: 15%;
 
         @media screen and (max-width: 880px){
-            width: 30%;
+            width: 100%;
         }
     }
 }
@@ -468,6 +497,11 @@ button{
             min-width: 55px !important;
             position: absolute;
             margin-top: 0;
+
+            @media screen and (max-width: 650px){
+                right: 10%;
+                left: auto;
+            }
 
             .meters{
                 font-size: 15px;
@@ -488,13 +522,18 @@ button{
             transform: rotate(-90deg) scale(3.5);
             z-index: 20;
 
+            @media screen and (max-width: 650px){
+                margin-left: 20%;
+                left: 0;
+            }
+
             &::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 border: none;
                 width: 30px;
                 height: 65px;
                 background: url('../images/background/line-ruler-premed.svg') center no-repeat;
-                background-size: 3px;
+                background-size: 2px;
                 cursor:row-resize;
             }
             &::-moz-range-thumb {
@@ -503,7 +542,7 @@ button{
                 width: 40px;
                 height: 65px;
                 background: url('../images/background/line-ruler-premed.svg') center no-repeat;
-                background-size: 3px;
+                background-size: 2px;
                 cursor:row-resize;
             }
             &::-moz-range-track{
@@ -532,7 +571,17 @@ button{
         width: 205px;
         position: relative;
         flex-wrap: wrap;
-        transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        @extend .transition-cubic ;
+
+        @media screen and (max-width: 650px){
+            width: 90%;
+        }
+    }
+
+    .quantity.weight{
+        @media screen and (max-width: 650px){
+            min-height: 50px;
+        }
     }
 
     input[type=number]::-webkit-inner-spin-button,
@@ -547,7 +596,7 @@ button{
         margin: 10px 0 0 0;
         text-align: right ;
         -moz-appearance: textfield;
-        transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        @extend .transition-cubic ;
     }
 
     p{
@@ -557,11 +606,33 @@ button{
     .kg{
         margin-bottom: -10px;
         margin-right: 15%;
+
+        @media screen and (max-width: 880px){
+            right: -15%;
+        }
+
+        @media screen and (max-width: 650px){
+            margin-bottom: 0;
+            margin-top: 15px;
+            right: 2%;
+            margin-right: 0;
+            position: absolute;
+        }
     }
 
     .meters{
         position: absolute;
         right: -40%;
+
+        @media screen and (max-width: 880px){
+            right: -15%;
+        }
+
+        @media screen and (max-width: 650px){
+            margin-bottom: 0;
+            margin-top: 5px;
+            right: 3%;
+        }
     }
 
     .quantity input {
@@ -572,7 +643,14 @@ button{
         margin: 10px 0 0 0;
         @extend .font-medium-50px ;
         @extend .color-black ;
-        transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        @extend .transition-cubic ;
+
+        @media screen and (max-width: 650px){
+            font-size: 35px;
+            position: absolute;
+            left: auto;
+            right: 10%;
+        }
     }
 
     .quantity input:focus {
@@ -584,7 +662,14 @@ button{
         position: absolute;
         height: 20%;
         width: 295px;
-        transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+        z-index: 40;
+        @extend .transition-cubic ;
+
+        @media screen and (max-width: 650px){
+            width: 45px;
+            right: 10%;
+            left: auto;
+        }
 
         .quantity-button {
             position: relative;
@@ -637,4 +722,109 @@ button{
     @extend .shadow-red ;
     @extend .background-red ;
     @extend .color-white ;
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                PANTS COMPONENT
+                                            (Used on PreMed Circumference)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+.optionForm{
+    width: 100%;
+    max-width: 765px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 880px){
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    .illustrations{
+        width: 40%;
+        min-height: 380px;
+        margin: 0 5%;
+        position: relative;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 880px){
+            min-height: 250px;
+            margin-bottom: 20px;
+        }
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            left: 50%;
+            @extend .transition-cubic ;
+        }
+
+        // ALL ANIMATIONS OF PREMED
+        &.circumference{
+            .stretchPants{
+                transform: translateY(-50%) translateX(-50%) scaleX(1.5);
+            }
+        }
+
+        &.pregnancy{
+            @media screen and (max-width: 880px){
+                height: 250px;
+                min-width: 200px;
+
+                img{
+                    left: 20%;
+                }
+            }
+
+            @media screen and (max-width: 650px){
+                img{
+                    left: 10%;
+                }
+            }
+        }
+    }
+    .contentButtons{
+        width: 60%;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 615px){
+            width: 100%;
+            padding: 0 1%;
+        }
+
+        button{
+            width: 48%;
+            height: 40px;
+            border: 0;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 1.5% 1%;
+            @extend .transition-cubic ;
+            @extend .font-medium-12px ;
+            @extend .color-black ;
+            @extend .background-white ;
+            @extend .shadow-black ;
+        }
+        button:hover{
+            @extend .background-black ;
+            @extend .color-white ;
+            @extend .shadow-black ;
+        }
+        button.active{
+            @extend .background-lightBlue ;
+            @extend .color-white ;
+            @extend .shadow-lightBlue ;
+
+            &:hover{
+                @extend .background-lightBlue ;
+                @extend .color-white ;
+                @extend .shadow-lightBlue ;
+            }
+        }
+    }
 }
