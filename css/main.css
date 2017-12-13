@@ -5408,6 +5408,9 @@ button {
       overflow: hidden;
       position: relative;
       cursor: pointer; }
+      @media screen and (max-width: 1441px) {
+        .choose-ethnicity .container .card {
+          height: 270px; } }
       @media screen and (max-width: 870px) {
         .choose-ethnicity .container .card {
           width: 48%;
