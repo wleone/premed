@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>PreMed | Dados Demográficos</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
         <header class="w-100p h-65px shadow-black flex-column-center-center-center background-white">
-            <img class="w-120px" src="images/logo-medpass.png" alt="Logo MedPass">
+            <img class="w-120px" src="../images/logo-medpass.png" alt="Logo MedPass">
         </header>
 
         <div class="form-container w-100p background-lightGrey flex-column-center-center-center">
@@ -16,18 +16,25 @@
             <div class="info-user wrap box size100 flex-row-between-center-center">
 
                 <div class="box size60 flex-column-center-between-center">
-                    <p class="w-90p font-medium-15px color-black m-bottom-10px text-align-center">Qual é a sua altura?</p>
-                    <div class="box size33 flex-row-center-center-center">
+                    <p class="w-90p font-medium-15px color-black text-align-center">Qual é seu peso atual?</p>
+                    <div class="weightPerson box size33 flex-row-center-center-center">
                         <div class="person">
-                            <img id="character" class="character" src="images/characters/white-man.svg" alt="">
+                            <img id="character" class="character" src="../images/characters/white-man.svg" alt="">
                         </div>
-                        <div class="weight properties flex-column-center-center-center">
-                            <div class="quantity ruler flex-row-between-center-center m-bottom-20px">
-                                <input type="number" value="1.60" class="heightPerson top-50p left-70p translate-vertical font-medium-35px color-black m-top-20px m-20px" />
-                                <p class="meters font-medium-20px color-black m-top-10px m-bottom-20px top-50p translate-vertical">m</p>
-                                <input id="height" type="range" min="0.50" max="2.35" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" />
+                        <div class="properties flex-column-center-center-center">
+                            <div class="weight">
+                                <div class="quantity weight flex-row-center-center-center">
+                                    <input type="number" class="weight" value="60" min="20" max="200">
+                                    <p class="kg font-medium-20px color-black m-top-20px m-bottom-20px">kg</p>
+                                </div>
                             </div>
                         </div>
+                        <p class="errorMax w-100p m-top-20px text-align-center">
+                            Ops! O valor máximo é de 200kg
+                        </p>
+                        <p class="errorMin w-100p m-top-20px text-align-center">
+                            Ops! O valor mínimo é de 20kg
+                        </p>
                     </div>
                 </div>
 
@@ -36,15 +43,15 @@
             <div class="box contentSteps flex-column-start-start-start m-top-40px">
                 <button type="button" name="button" class="goButton background-lightBlue color-white shadow-lightBlue">Próximas perguntas</button>
                 <div class="w-100p flex-column-center-center-center m-top-30px font-regular-15px">
-                    <a href="birthday.html" title="" class="link back">Voltar</a>
+                    <a href="height.html" title="" class="link back">Voltar</a>
                 </div>
                 <div class="steps m-top-30px">
-                    <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">3 / 5</p>
+                    <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">4 / 5</p>
                     <div class="bars flex-row-around-center-center">
                         <div class="bar active"></div>
                         <div class="bar active"></div>
                         <div class="bar active"></div>
-                        <div class="bar"></div>
+                        <div class="bar active"></div>
                         <div class="bar"></div>
                     </div>
                 </div>
@@ -53,10 +60,10 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/height-function.js" type="text/javascript"></script>
+        <script src="../js/weight-function.js" type="text/javascript"></script>
         <script type="text/javascript">
             $('.goButton').click(function(event) {
-                url = 'weight.html';
+                url = 'circumference.html';
                 window.location.replace(url);
             });
         </script>

@@ -9,7 +9,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
-.flex-column-center-center-center {
+.flex-column-center-center-center, .bemtevi.premed, .bemtevi.premed .modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2338,10 +2338,10 @@
 .background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   background-color: #45C6D6; }
 
-.color-white, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.color-white, .bemtevi.premed .helper .alert .alert-pulse p, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   color: #FFFFFF; }
 
-.background-white, .optionForm .contentButtons button {
+.background-white, .bemtevi.premed .modal, .optionForm .contentButtons button {
   background-color: #FFFFFF; }
 
 .color-lightGrey {
@@ -2464,7 +2464,7 @@
   font-weight: 400;
   font-size: 50px; }
 
-.font-medium-10px {
+.font-medium-10px, .bemtevi.premed .helper .alert .alert-pulse p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 10px; }
@@ -2585,7 +2585,7 @@
 .shadow-lightGreen, .goButton:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
-.shadow-black, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
+.shadow-black, .bemtevi.premed .modal, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
 
 /*
@@ -2595,7 +2595,7 @@
 
 ========================================================
 */
-.transition-cubic, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
@@ -2716,7 +2716,7 @@ header {
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
-.flex-column-center-center-center {
+.flex-column-center-center-center, .bemtevi.premed, .bemtevi.premed .modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5045,10 +5045,10 @@ header {
 .background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   background-color: #45C6D6; }
 
-.color-white, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.color-white, .bemtevi.premed .helper .alert .alert-pulse p, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
   color: #FFFFFF; }
 
-.background-white, .optionForm .contentButtons button {
+.background-white, .bemtevi.premed .modal, .optionForm .contentButtons button {
   background-color: #FFFFFF; }
 
 .color-lightGrey {
@@ -5171,7 +5171,7 @@ header {
   font-weight: 400;
   font-size: 50px; }
 
-.font-medium-10px {
+.font-medium-10px, .bemtevi.premed .helper .alert .alert-pulse p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 10px; }
@@ -5292,7 +5292,7 @@ header {
 .shadow-lightGreen, .goButton:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
-.shadow-black, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
+.shadow-black, .bemtevi.premed .modal, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
 
 /*
@@ -5302,7 +5302,7 @@ header {
 
 ========================================================
 */
-.transition-cubic, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 a, button, input[type="submit"], input[type="file"] {
@@ -5322,6 +5322,160 @@ a, button, input[type="submit"], input[type="file"] {
 button {
   border: 0; }
 
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                        BEM-TE-VI
+                                                    (Used on PreMed)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+.bemtevi {
+  width: 85px;
+  min-height: 70px; }
+  .bemtevi.premed {
+    width: 300px;
+    position: fixed;
+    right: 5%;
+    top: 20px;
+    z-index: 100;
+    visibility: hidden; }
+    @media screen and (max-width: 870px) {
+      .bemtevi.premed {
+        bottom: 15px;
+        right: 10px;
+        top: auto;
+        flex-flow: column-reverse;
+        align-items: flex-end; } }
+    .bemtevi.premed .helper {
+      width: 110px;
+      min-height: 100px;
+      position: relative;
+      cursor: pointer;
+      z-index: 110; }
+      .bemtevi.premed .helper img {
+        width: 100%;
+        z-index: 10; }
+      .bemtevi.premed .helper .alert {
+        float: left;
+        width: 20px;
+        height: 20px;
+        z-index: 110;
+        position: absolute;
+        right: 25px;
+        bottom: 20px; }
+        .bemtevi.premed .helper .alert .alert-pulse {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          text-align: center;
+          position: relative; }
+          .bemtevi.premed .helper .alert .alert-pulse p {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            line-height: 20px;
+            border-radius: 50%;
+            z-index: 110;
+            position: relative; }
+          .bemtevi.premed .helper .alert .alert-pulse:before, .bemtevi.premed .helper .alert .alert-pulse:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform: scale(0.5);
+            transform-origin: center center;
+            animation: pulse-me 3s linear infinite;
+            z-index: 100; }
+          .bemtevi.premed .helper .alert .alert-pulse:after {
+            animation-delay: 5s; }
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0; }
+  50% {
+    opacity: 0.1; }
+  70% {
+    opacity: 0.09; }
+  100% {
+    transform: scale(5);
+    opacity: 0; } }
+    .bemtevi.premed .modal {
+      width: auto;
+      height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      position: absolute;
+      top: 35px;
+      z-index: 100; }
+      @media screen and (max-width: 870px) {
+        .bemtevi.premed .modal {
+          top: auto;
+          bottom: 55px; } }
+      .bemtevi.premed .modal .closeButton {
+        width: 45px;
+        height: 45px;
+        border: 0;
+        outline: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: url("../images/icons/close-button-bemtevi.svg") center no-repeat;
+        background-size: 15px; }
+        .bemtevi.premed .modal .closeButton:hover {
+          transform: scale(1.1); }
+      .bemtevi.premed .modal p {
+        opacity: 0;
+        transition-duration: 0.1s;
+        margin: 15px 0; }
+        @media screen and (max-width: 870px) {
+          .bemtevi.premed .modal p {
+            margin: 15px 0; } }
+    .bemtevi.premed .modal.open {
+      height: auto;
+      overflow: auto;
+      padding: 60px 0 30px; }
+      @media screen and (max-width: 870px) {
+        .bemtevi.premed .modal.open {
+          padding: 30px 0; } }
+      .bemtevi.premed .modal.open p {
+        opacity: 1;
+        transition-duration: 0.1s; }
+    .bemtevi.premed.expandUp {
+      animation-name: expandUp;
+      -webkit-animation-name: expandUp;
+      animation-duration: 0.55s;
+      -webkit-animation-duration: 0.55s;
+      animation-timing-function: ease;
+      -webkit-animation-timing-function: ease;
+      visibility: visible !important; }
+@keyframes expandUp {
+  0% {
+    transform: translateY(80vh) scale(0.6) scaleY(0.5); }
+  60% {
+    transform: translateY(-7%) scaleY(1.12); }
+  75% {
+    transform: translateY(3%); }
+  100% {
+    transform: translateY(0%) scale(1) scaleY(1); } }
+@-webkit-keyframes expandUp {
+  0% {
+    -webkit-transform: translateY(80vh) scale(0.6) scaleY(0.5); }
+  60% {
+    -webkit-transform: translateY(-7%) scaleY(1.12); }
+  75% {
+    -webkit-transform: translateY(3%); }
+  100% {
+    -webkit-transform: translateY(0%) scale(1) scaleY(1); } }
 /*
 ====================================================================================================================================================
 ====================================================================================================================================================
@@ -5689,7 +5843,7 @@ button {
       -webkit-transform: rotate(-90deg) scale(3.5);
       -moz-transform: rotate(-90deg) scale(3.5);
       transform: rotate(-90deg) scale(3.5);
-      z-index: 20; }
+      z-index: 50; }
       @media screen and (max-width: 650px) {
         .properties .ruler #height {
           margin-left: 20%;

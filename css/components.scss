@@ -25,6 +25,226 @@ button{
 ====================================================================================================================================================
 ====================================================================================================================================================
 
+                                                        BEM-TE-VI
+                                                    (Used on PreMed)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+.bemtevi{
+    width: 85px;
+    min-height: 70px;
+
+    &.premed{
+        width: 300px;
+        position: fixed;
+        right: 5%;
+        top: 20px;
+        z-index: 100;
+        @extend .flex-column-center-center-center ;
+        visibility: hidden;
+
+        @media screen and (max-width: 870px){
+            bottom: 15px;
+            right: 10px;
+            top: auto;
+            flex-flow: column-reverse;
+            align-items: flex-end;
+        }
+
+        .helper{
+            width: 110px;
+            min-height: 100px;
+            position: relative;
+            cursor: pointer;
+            z-index: 110;
+
+            img{
+                width: 100%;
+                z-index: 10;
+            }
+            .alert{
+                float: left;
+                width: 20px;
+                height: 20px;
+                z-index: 110;
+                position: absolute;
+                right: 25px;
+                bottom: 20px;
+
+                .alert-pulse{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: relative;
+
+                    p{
+                        width: 20px;
+                        height: 20px;
+                        background-color: red;
+                        @extend .font-medium-10px ;
+                        @extend .color-white ;
+                        line-height: 20px;
+                        border-radius: 50%;
+                        z-index: 110;
+                        position: relative;
+                    }
+
+                    &:before,
+                    &:after{
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: red;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                        transform: scale(0.5);
+                        transform-origin: center center;
+                        animation: pulse-me 3s linear infinite;
+                        z-index: 100;
+                    }
+                    &:after{
+                        animation-delay: 5s;
+                    }
+                    }
+
+                    @keyframes pulse-me{
+                    0%{
+                        transform: scale(0.5);
+                        opacity: 0;
+                    }
+                    50%{
+                        opacity: 0.1;
+                    }
+                    70%{
+                        opacity: 0.09;
+                    }
+                    100%{
+                        transform: scale(5);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .modal{
+            width: auto;
+            height: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: absolute;
+            top: 35px;
+            @extend .background-white ;
+            @extend .shadow-black ;
+            @extend .flex-column-center-center-center ;
+            @extend .transition-cubic ;
+            z-index: 100;
+
+            @media screen and (max-width: 870px){
+                top: auto;
+                bottom: 55px;
+            }
+
+            .closeButton{
+                width: 45px;
+                height: 45px;
+                border: 0;
+                outline: none;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: url('../images/icons/close-button-bemtevi.svg') center no-repeat;
+                background-size: 15px;
+                @extend .transition-cubic ;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            p{
+                opacity: 0;
+                transition-duration: 0.1s;
+                margin: 15px 0;
+
+                @media screen and (max-width: 870px){
+                    margin: 15px 0;
+                }
+            }
+        }
+
+        // ANIMATIONS
+
+        .modal.open{
+            height: auto;
+            overflow: auto;
+            padding: 60px 0 30px;
+
+            @media screen and (max-width: 870px){
+                padding: 30px 0;
+            }
+
+            p{
+                opacity: 1;
+                transition-duration: 0.1s;
+            }
+        }
+
+        &.expandUp{
+        	animation-name: expandUp;
+        	-webkit-animation-name: expandUp;
+
+        	animation-duration: 0.55s;
+        	-webkit-animation-duration: 0.55s;
+
+        	animation-timing-function: ease;
+        	-webkit-animation-timing-function: ease;
+
+        	visibility: visible !important;
+        }
+
+        @keyframes expandUp {
+        	0% {
+        		transform: translateY(80vh) scale(0.6) scaleY(0.5);
+        	}
+        	60%{
+        		transform: translateY(-7%) scaleY(1.12);
+        	}
+        	75%{
+        		transform: translateY(3%);
+        	}
+        	100% {
+        		transform: translateY(0%) scale(1) scaleY(1);
+        	}
+        }
+
+        @-webkit-keyframes expandUp {
+        	0% {
+        		-webkit-transform: translateY(80vh) scale(0.6) scaleY(0.5);
+        	}
+        	60%{
+        		-webkit-transform: translateY(-7%) scaleY(1.12);
+        	}
+        	75%{
+        		-webkit-transform: translateY(3%);
+        	}
+        	100% {
+        		-webkit-transform: translateY(0%) scale(1) scaleY(1);
+        	}
+        }
+    }
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
                                                     CHOOSE GENRE
 
 ====================================================================================================================================================
@@ -526,7 +746,7 @@ button{
             -webkit-transform:rotate(-90deg) scale(3.5);
             -moz-transform:rotate(-90deg) scale(3.5);
             transform: rotate(-90deg) scale(3.5);
-            z-index: 20;
+            z-index: 50;
 
             @media screen and (max-width: 650px){
                 margin-left: 20%;
