@@ -57,6 +57,12 @@ header{
     position: fixed;
     z-index: 100;
     top: 0;
+
+    &.premed{
+        @media screen and (max-width: 615px){
+            display: none;
+        }
+    }
 }
 
 .form-container{
@@ -71,6 +77,13 @@ header{
     @media screen and (max-width: 1025px){
         padding-top: 85px;
         min-height: calc(100vh - 85px);
+    }
+
+    &.premed{
+        @media screen and (max-width: 615px){
+            padding-top: 10px;
+            min-height: 100vh;
+        }
     }
 }
 

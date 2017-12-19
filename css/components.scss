@@ -1,6 +1,15 @@
-a, button, input[type="submit"], input[type="file"]{
+input[type="number"]::-webkit-input-placeholder {
+    color: #45C6D6;
+}
+input[type="number"]:-moz-placeholder {
+    color: #45C6D6;
+}
+
+a, button, input[type="submit"], input[type="file"], input[type="number"]{
     cursor: pointer;
     outline: none;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .link{
@@ -46,7 +55,7 @@ button{
         visibility: hidden;
 
         @media screen and (max-width: 870px){
-            bottom: 15px;
+            bottom: -10px;
             right: 10px;
             top: auto;
             flex-flow: column-reverse;
@@ -960,14 +969,33 @@ button{
 ====================================================================================================================================================
 ====================================================================================================================================================
 */
+
 .optionForm{
     width: 100%;
-    max-width: 765px;
+    max-width: 860px;
     box-sizing: border-box;
 
     @media screen and (max-width: 880px){
         flex-direction: column-reverse;
         margin-bottom: 30px;
+    }
+
+    .options{
+        transition-duration: 0.75s;
+    }
+
+    .quest{
+        display: none;
+
+        p{
+            @media screen and (max-width: 870px){
+                text-align: center;
+            }
+        }
+    }
+
+    .quest:first-child{
+        display: block;
     }
 
     .illustrations{
@@ -980,6 +1008,115 @@ button{
         @media screen and (max-width: 880px){
             min-height: 250px;
             margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        &.cigarret-pack{
+            @media screen and (max-width: 870px){
+                width: 145px;
+            }
+
+            img{
+                left: 0;
+                bottom: 0;
+            }
+
+            .cigar-pack-back{
+                width: 100%;
+            }
+            .cigarrets{
+                width: 70%;
+                position: absolute;
+                left: 50%;
+                top: 7%;
+
+                &.front{
+                    top: 9%;
+                }
+
+                img{
+                    width: 25%;
+                    margin: 0 -3%;
+                    position: relative;
+                }
+                .cigarret{
+                    visibility: hidden;
+                }
+                .hideCigarret{
+                	animation-name: hideCigarret;
+                	-webkit-animation-name: hideCigarret;
+                	animation-duration: 1s;
+                	-webkit-animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    -webkit-animation-fill-mode: forwards;
+                	animation-timing-function: ease;
+                	-webkit-animation-timing-function: ease;
+                    visibility: visible !important;
+                }
+                .showCigarret{
+                	animation-name: showCigarret;
+                	-webkit-animation-name: showCigarret;
+                	animation-duration: 1s;
+                	-webkit-animation-duration: 1s;
+                    animation-fill-mode: forwards;
+                    -webkit-animation-fill-mode: forwards;
+                	animation-timing-function: ease;
+                	-webkit-animation-timing-function: ease;
+                	visibility: visible !important;
+                }
+
+                @keyframes showCigarret {
+                    0%{
+                        visibility: hidden;
+                    }
+                    1% {
+                        opacity: 0;
+                        transform: translateY(50%);
+                	}
+                	50%{
+                		transform: translateY(-8%);
+                	}
+                	65%{
+                        opacity: 1;
+                        transform: translateY(4%);
+                	}
+                	80%{
+                		transform: translateY(-4%);
+                	}
+                	95%{
+                		transform: translateY(2%);
+                	}
+                	100% {
+                		transform: translateY(0%);
+                	}
+                }
+
+                @keyframes hideCigarret {
+                	100% {
+                        opacity: 0;
+                        transform: translateY(50%);
+                	}
+                	95%{
+                		transform: translateY(2%);
+                	}
+                	80%{
+                        transform: translateY(-4%);
+                	}
+                	65%{
+                		transform: translateY(4%);
+                	}
+                	50%{
+                		transform: translateY(-8%);
+                	}
+                	0% {
+                        opacity: 1;
+                		transform: translateY(0%);
+                	}
+                }
+            }
+            .cigar-pack-front{
+                width: 100%;
+            }
         }
 
         img{
@@ -992,8 +1129,13 @@ button{
 
         // ALL ANIMATIONS OF PREMED
         &.circumference{
+            img{
+                max-width: 90%;
+                max-height: 90%;
+            }
+
             .stretchPants{
-                transform: translateY(-50%) translateX(-50%) scaleX(1.5);
+                transform: translateY(-50%) translateX(-50%) scaleX(1.25);
             }
         }
 
@@ -1013,19 +1155,58 @@ button{
                 }
             }
         }
+
+        &.horizontal-transition{
+            .activity{
+                margin: 0;
+                opacity: 0;
+                transform: translateY(0%);
+                left: 0;
+            }
+            .appear{
+                opacity: 1;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+            }
+        }
     }
     .contentButtons{
-        width: 60%;
+        width: 65%;
+        min-width: 460px;
         box-sizing: border-box;
+        position: relative;
 
-        @media screen and (max-width: 615px){
+        @media screen and (max-width: 870px){
             width: 100%;
+            min-width: auto;
             padding: 0 1%;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        &.cigar{
+            input[type="number"]{
+                border: 0;
+                background: transparent;
+            }
+        }
+
+        &.cigar-perday:after, &.cigar-years:after{
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            width: 150px;
+            background: #45C6D6;
+            content: '';
+        }
+        &.cigar-perday:after{
+            width: 250px;
         }
 
         button{
             width: 48%;
-            height: 40px;
+            min-width: 220px;
+            height: 45px;
             border: 0;
             cursor: pointer;
             border-radius: 10px;
@@ -1035,6 +1216,15 @@ button{
             @extend .color-black ;
             @extend .background-white ;
             @extend .shadow-black ;
+
+            @media screen and (max-width: 650px){
+                width: 85%;
+            }
+
+            &.small{
+                min-width: 150px;
+                width: 35%;
+            }
         }
         button:hover{
             @extend .background-black ;
@@ -1050,6 +1240,111 @@ button{
                 @extend .background-lightBlue ;
                 @extend .color-white ;
                 @extend .shadow-lightBlue ;
+            }
+        }
+    }
+}
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                    INTRO PREMED
+                                                  (Used on PreMed)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+
+.intro.premed{
+    width: 90%;
+    max-width: 860px;
+
+    h1{
+        @media screen and (max-width: 921px){
+            width: 100%;
+            margin: 20px 0 40px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 650px){
+            font-size: 25px;
+        }
+    }
+
+    .description{
+        width: 100%;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 921px){
+            flex-direction: column;
+        }
+
+        .bemtevi{
+            width: 125px;
+
+            @media screen and (max-width: 921px){
+                width: 150px;
+            }
+        }
+        p{
+            line-height: 25px;
+
+            @media screen and (max-width: 921px){
+                width: 80%;
+                margin: 15px 0 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .links{
+        width: 70%;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 921px){
+            width: 245px;
+            margin: 40px 0;
+        }
+
+        @media screen and (max-width: 650px){
+            justify-content: center;
+        }
+
+        a{
+            width: 220px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            @extend .font-medium-12px ;
+            @extend .border-lightBlue ;
+            @extend .transition-cubic ;
+        }
+        .now{
+            @extend .background-lightBlue ;
+            @extend .color-white ;
+            @extend .shadow-lightBlue ;
+            margin-right: 20px;
+
+            @media screen and (max-width: 921px){
+                margin: 0 0 20px;
+            }
+
+            &:hover{
+                @extend .background-lightGreen ;
+                @extend .color-white ;
+                @extend .shadow-lightGreen ;
+                @extend .border-lightGreen ;
+            }
+        }
+        .later{
+            @extend .color-lightBlue ;
+
+            &:hover{
+                @extend .color-lightGreen ;
+                @extend .border-lightGreen ;
             }
         }
     }

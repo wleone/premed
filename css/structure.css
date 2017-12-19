@@ -99,10 +99,24 @@
   align-items: center;
   align-content: center; }
 
+.flex-row-around-center-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start; }
+
 .flex-row-center-center-center {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.flex-row-start-center-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   align-content: center; }
 
@@ -2590,6 +2604,22 @@
 /*
 ========================================================
 
+                        BORDER
+
+========================================================
+*/
+.border-lightBlue {
+  border: 2px solid #45C6D6; }
+
+.border-red {
+  border: 2px solid #E05D6D; }
+
+.border-lightGreen {
+  border: 2px solid #50E3C2; }
+
+/*
+========================================================
+
                         TRANSITIONS
 
 ========================================================
@@ -2683,6 +2713,9 @@ header {
   position: fixed;
   z-index: 100;
   top: 0; }
+  @media screen and (max-width: 615px) {
+    header.premed {
+      display: none; } }
 
 .form-container {
   min-height: 100vh;
@@ -2695,6 +2728,10 @@ header {
     .form-container {
       padding-top: 85px;
       min-height: calc(100vh - 85px); } }
+  @media screen and (max-width: 615px) {
+    .form-container.premed {
+      padding-top: 10px;
+      min-height: 100vh; } }
 
 .wrap {
   margin: 0 auto; }

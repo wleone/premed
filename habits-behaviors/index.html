@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>PreMed | Hábitos e Comportamentos</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header class="premed w-100p h-65px shadow-black flex-column-center-center-center background-white">
+            <img class="w-120px" src="../images/logo-medpass.png" alt="Logo MedPass">
+        </header>
+
+        <div class="premed form-container w-100p background-lightGrey flex-column-center-center-center">
+
+            <div class="wrap box size100 flex-column-center-center-center">
+
+                <div class="intro premed flex-column-center-center-center">
+                    <h1 class="w-70p font-medium-35px color-black">Hábitos e Comportamentos</h1>
+                    <div class="description flex-row-between-center-center">
+                        <img src="../images/bemtevi.png" alt="" class="bemtevi">
+                        <p class="w-100p font-regular-15px color-black">
+                            Agora queremos saber mais sobre os seus hábitos de saúde.<br>
+                            Será muito importante para os nossos médicos. Quer responder agora? Não vai demorar muito.
+                        </p>
+                    </div>
+                    <div class="links flex-row-start-start-start">
+                        <a href="#" title="" class="now goButton">Responder agora</a>
+                        <a href="#" title="" class="later">Responder mais tarde</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $('.goButton').click(function(event) {
+                url = 'physical-activity.html';
+                window.location.replace(url);
+            });
+        </script>
+    </body>
+</html>

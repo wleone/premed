@@ -100,10 +100,24 @@
   align-items: center;
   align-content: center; }
 
+.flex-row-around-center-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start; }
+
 .flex-row-center-center-center, .info-user {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.flex-row-start-center-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   align-content: center; }
 
@@ -2332,13 +2346,13 @@
 
 ========================================================
 */
-.color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+.color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active, .intro.premed .links .later {
   color: #45C6D6; }
 
-.background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover, .intro.premed .links .now {
   background-color: #45C6D6; }
 
-.color-white, .bemtevi.premed .helper .alert .alert-pulse p, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.color-white, .bemtevi.premed .helper .alert .alert-pulse p, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover, .intro.premed .links .now, .intro.premed .links .now:hover {
   color: #FFFFFF; }
 
 .background-white, .bemtevi.premed .modal, .optionForm .contentButtons button {
@@ -2368,10 +2382,10 @@
 .background-violet {
   background-color: #B67BE9; }
 
-.color-lightGreen {
+.color-lightGreen, .intro.premed .links .later:hover {
   color: #50E3C2; }
 
-.background-lightGreen, .goButton:hover {
+.background-lightGreen, .goButton:hover, .intro.premed .links .now:hover {
   background-color: #50E3C2; }
 
 .color-lightOrange {
@@ -2469,7 +2483,7 @@
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax, .optionForm .contentButtons button {
+.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax, .optionForm .contentButtons button, .intro.premed .links a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
@@ -2576,13 +2590,13 @@
 
 ========================================================
 */
-.shadow-lightBlue, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.shadow-lightBlue, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover, .intro.premed .links .now {
   box-shadow: 0 3px 30px #45C6D6; }
 
 .shadow-red, .errorMin, .errorMax {
   box-shadow: 0 3px 20px #E05D6D; }
 
-.shadow-lightGreen, .goButton:hover {
+.shadow-lightGreen, .goButton:hover, .intro.premed .links .now:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
 .shadow-black, .bemtevi.premed .modal, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
@@ -2591,11 +2605,27 @@
 /*
 ========================================================
 
+                        BORDER
+
+========================================================
+*/
+.border-lightBlue, .intro.premed .links a {
+  border: 2px solid #45C6D6; }
+
+.border-red {
+  border: 2px solid #E05D6D; }
+
+.border-lightGreen, .intro.premed .links .now:hover, .intro.premed .links .later:hover {
+  border: 2px solid #50E3C2; }
+
+/*
+========================================================
+
                         TRANSITIONS
 
 ========================================================
 */
-.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
@@ -2684,6 +2714,9 @@ header {
   position: fixed;
   z-index: 100;
   top: 0; }
+  @media screen and (max-width: 615px) {
+    header.premed {
+      display: none; } }
 
 .form-container {
   min-height: 100vh;
@@ -2696,6 +2729,10 @@ header {
     .form-container {
       padding-top: 85px;
       min-height: calc(100vh - 85px); } }
+  @media screen and (max-width: 615px) {
+    .form-container.premed {
+      padding-top: 10px;
+      min-height: 100vh; } }
 
 .wrap {
   margin: 0 auto; }
@@ -2807,10 +2844,24 @@ header {
   align-items: center;
   align-content: center; }
 
+.flex-row-around-center-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start; }
+
 .flex-row-center-center-center, .info-user {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.flex-row-start-center-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   align-content: center; }
 
@@ -5039,13 +5090,13 @@ header {
 
 ========================================================
 */
-.color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+.color-lightBlue, .back, .md-select [type=button].selected, .md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active, .intro.premed .links .later {
   color: #45C6D6; }
 
-.background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.background-lightBlue, .steps .bar.active, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover, .intro.premed .links .now {
   background-color: #45C6D6; }
 
-.color-white, .bemtevi.premed .helper .alert .alert-pulse p, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.color-white, .bemtevi.premed .helper .alert .alert-pulse p, .errorMin, .errorMax, .optionForm .contentButtons button:hover, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover, .intro.premed .links .now, .intro.premed .links .now:hover {
   color: #FFFFFF; }
 
 .background-white, .bemtevi.premed .modal, .optionForm .contentButtons button {
@@ -5075,10 +5126,10 @@ header {
 .background-violet {
   background-color: #B67BE9; }
 
-.color-lightGreen {
+.color-lightGreen, .intro.premed .links .later:hover {
   color: #50E3C2; }
 
-.background-lightGreen, .goButton:hover {
+.background-lightGreen, .goButton:hover, .intro.premed .links .now:hover {
   background-color: #50E3C2; }
 
 .color-lightOrange {
@@ -5176,7 +5227,7 @@ header {
   font-weight: 500;
   font-size: 10px; }
 
-.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax, .optionForm .contentButtons button {
+.font-medium-12px, .md-select ul[role=listbox], .errorMin, .errorMax, .optionForm .contentButtons button, .intro.premed .links a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px; }
@@ -5283,13 +5334,13 @@ header {
 
 ========================================================
 */
-.shadow-lightBlue, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover {
+.shadow-lightBlue, .optionForm .contentButtons button.active, .optionForm .contentButtons button.active:hover, .intro.premed .links .now {
   box-shadow: 0 3px 30px #45C6D6; }
 
 .shadow-red, .errorMin, .errorMax {
   box-shadow: 0 3px 20px #E05D6D; }
 
-.shadow-lightGreen, .goButton:hover {
+.shadow-lightGreen, .goButton:hover, .intro.premed .links .now:hover {
   box-shadow: 0 3px 20px #50E3C2; }
 
 .shadow-black, .bemtevi.premed .modal, .md-select ul[role=listbox], .optionForm .contentButtons button, .optionForm .contentButtons button:hover {
@@ -5298,16 +5349,40 @@ header {
 /*
 ========================================================
 
+                        BORDER
+
+========================================================
+*/
+.border-lightBlue, .intro.premed .links a {
+  border: 2px solid #45C6D6; }
+
+.border-red {
+  border: 2px solid #E05D6D; }
+
+.border-lightGreen, .intro.premed .links .now:hover, .intro.premed .links .later:hover {
+  border: 2px solid #50E3C2; }
+
+/*
+========================================================
+
                         TRANSITIONS
 
 ========================================================
 */
-.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
-a, button, input[type="submit"], input[type="file"] {
+input[type="number"]::-webkit-input-placeholder {
+  color: #45C6D6; }
+
+input[type="number"]:-moz-placeholder {
+  color: #45C6D6; }
+
+a, button, input[type="submit"], input[type="file"], input[type="number"] {
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  -webkit-appearance: none;
+  margin: 0; }
 
 .link {
   text-align: center;
@@ -5344,7 +5419,7 @@ button {
     visibility: hidden; }
     @media screen and (max-width: 870px) {
       .bemtevi.premed {
-        bottom: 15px;
+        bottom: -10px;
         right: 10px;
         top: auto;
         flex-flow: column-reverse;
@@ -6000,12 +6075,21 @@ button {
 */
 .optionForm {
   width: 100%;
-  max-width: 765px;
+  max-width: 860px;
   box-sizing: border-box; }
   @media screen and (max-width: 880px) {
     .optionForm {
       flex-direction: column-reverse;
       margin-bottom: 30px; } }
+  .optionForm .options {
+    transition-duration: 0.75s; }
+  .optionForm .quest {
+    display: none; }
+    @media screen and (max-width: 870px) {
+      .optionForm .quest p {
+        text-align: center; } }
+  .optionForm .quest:first-child {
+    display: block; }
   .optionForm .illustrations {
     width: 40%;
     min-height: 380px;
@@ -6015,14 +6099,93 @@ button {
     @media screen and (max-width: 880px) {
       .optionForm .illustrations {
         min-height: 250px;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px;
+        overflow: hidden; } }
+    @media screen and (max-width: 870px) {
+      .optionForm .illustrations.cigarret-pack {
+        width: 145px; } }
+    .optionForm .illustrations.cigarret-pack img {
+      left: 0;
+      bottom: 0; }
+    .optionForm .illustrations.cigarret-pack .cigar-pack-back {
+      width: 100%; }
+    .optionForm .illustrations.cigarret-pack .cigarrets {
+      width: 70%;
+      position: absolute;
+      left: 50%;
+      top: 7%; }
+      .optionForm .illustrations.cigarret-pack .cigarrets.front {
+        top: 9%; }
+      .optionForm .illustrations.cigarret-pack .cigarrets img {
+        width: 25%;
+        margin: 0 -3%;
+        position: relative; }
+      .optionForm .illustrations.cigarret-pack .cigarrets .cigarret {
+        visibility: hidden; }
+      .optionForm .illustrations.cigarret-pack .cigarrets .hideCigarret {
+        animation-name: hideCigarret;
+        -webkit-animation-name: hideCigarret;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        visibility: visible !important; }
+      .optionForm .illustrations.cigarret-pack .cigarrets .showCigarret {
+        animation-name: showCigarret;
+        -webkit-animation-name: showCigarret;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-timing-function: ease;
+        -webkit-animation-timing-function: ease;
+        visibility: visible !important; }
+@keyframes showCigarret {
+  0% {
+    visibility: hidden; }
+  1% {
+    opacity: 0;
+    transform: translateY(50%); }
+  50% {
+    transform: translateY(-8%); }
+  65% {
+    opacity: 1;
+    transform: translateY(4%); }
+  80% {
+    transform: translateY(-4%); }
+  95% {
+    transform: translateY(2%); }
+  100% {
+    transform: translateY(0%); } }
+@keyframes hideCigarret {
+  100% {
+    opacity: 0;
+    transform: translateY(50%); }
+  95% {
+    transform: translateY(2%); }
+  80% {
+    transform: translateY(-4%); }
+  65% {
+    transform: translateY(4%); }
+  50% {
+    transform: translateY(-8%); }
+  0% {
+    opacity: 1;
+    transform: translateY(0%); } }
+    .optionForm .illustrations.cigarret-pack .cigar-pack-front {
+      width: 100%; }
     .optionForm .illustrations img {
       max-width: 100%;
       max-height: 100%;
       position: absolute;
       left: 50%; }
+    .optionForm .illustrations.circumference img {
+      max-width: 90%;
+      max-height: 90%; }
     .optionForm .illustrations.circumference .stretchPants {
-      transform: translateY(-50%) translateX(-50%) scaleX(1.5); }
+      transform: translateY(-50%) translateX(-50%) scaleX(1.25); }
     @media screen and (max-width: 880px) {
       .optionForm .illustrations.pregnancy {
         height: 250px;
@@ -6032,19 +6195,114 @@ button {
     @media screen and (max-width: 650px) {
       .optionForm .illustrations.pregnancy img {
         left: 10%; } }
+    .optionForm .illustrations.horizontal-transition .activity {
+      margin: 0;
+      opacity: 0;
+      transform: translateY(0%);
+      left: 0; }
+    .optionForm .illustrations.horizontal-transition .appear {
+      opacity: 1;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%); }
   .optionForm .contentButtons {
-    width: 60%;
-    box-sizing: border-box; }
-    @media screen and (max-width: 615px) {
+    width: 65%;
+    min-width: 460px;
+    box-sizing: border-box;
+    position: relative; }
+    @media screen and (max-width: 870px) {
       .optionForm .contentButtons {
         width: 100%;
-        padding: 0 1%; } }
+        min-width: auto;
+        padding: 0 1%;
+        margin-bottom: 30px;
+        justify-content: center; } }
+    .optionForm .contentButtons.cigar input[type="number"] {
+      border: 0;
+      background: transparent; }
+    .optionForm .contentButtons.cigar-perday:after, .optionForm .contentButtons.cigar-years:after {
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      width: 150px;
+      background: #45C6D6;
+      content: ''; }
+    .optionForm .contentButtons.cigar-perday:after {
+      width: 250px; }
     .optionForm .contentButtons button {
       width: 48%;
-      height: 40px;
+      min-width: 220px;
+      height: 45px;
       border: 0;
       cursor: pointer;
       border-radius: 10px;
       margin: 1.5% 1%; }
+      @media screen and (max-width: 650px) {
+        .optionForm .contentButtons button {
+          width: 85%; } }
+      .optionForm .contentButtons button.small {
+        min-width: 150px;
+        width: 35%; }
+
+/*
+====================================================================================================================================================
+====================================================================================================================================================
+
+                                                    INTRO PREMED
+                                                  (Used on PreMed)
+
+====================================================================================================================================================
+====================================================================================================================================================
+*/
+.intro.premed {
+  width: 90%;
+  max-width: 860px; }
+  @media screen and (max-width: 921px) {
+    .intro.premed h1 {
+      width: 100%;
+      margin: 20px 0 40px;
+      text-align: center; } }
+  @media screen and (max-width: 650px) {
+    .intro.premed h1 {
+      font-size: 25px; } }
+  .intro.premed .description {
+    width: 100%;
+    box-sizing: border-box; }
+    @media screen and (max-width: 921px) {
+      .intro.premed .description {
+        flex-direction: column; } }
+    .intro.premed .description .bemtevi {
+      width: 125px; }
+      @media screen and (max-width: 921px) {
+        .intro.premed .description .bemtevi {
+          width: 150px; } }
+    .intro.premed .description p {
+      line-height: 25px; }
+      @media screen and (max-width: 921px) {
+        .intro.premed .description p {
+          width: 80%;
+          margin: 15px 0 0;
+          text-align: center; } }
+  .intro.premed .links {
+    width: 70%;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 921px) {
+      .intro.premed .links {
+        width: 245px;
+        margin: 40px 0; } }
+    @media screen and (max-width: 650px) {
+      .intro.premed .links {
+        justify-content: center; } }
+    .intro.premed .links a {
+      width: 220px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 50px;
+      text-decoration: none; }
+    .intro.premed .links .now {
+      margin-right: 20px; }
+      @media screen and (max-width: 921px) {
+        .intro.premed .links .now {
+          margin: 0 0 20px; } }
 
 /*# sourceMappingURL=main.css.map */
