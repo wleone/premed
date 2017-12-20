@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>PreMed | Hábitos e Comportamentos</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header class="premed w-100p h-65px shadow-black flex-column-center-center-center background-white">
+            <img class="w-120px" src="../images/logo-medpass.png" alt="Logo MedPass">
+        </header>
+
+        <div class="premed form-container w-100p background-lightGrey flex-column-center-center-center">
+
+            <div class="info-user wrap box size100 flex-row-between-center-center">
+
+                <div class="box size90 flex-column-center-between-center flex-wrap">
+                    <div class="optionForm feeding m-top-30px flex-row-center-center-center">
+                        <div class="w-100p options">
+                            <div class="quest first">
+                                <p class="w-100p font-medium-15px color-black m-bottom-10px">Você pratica atividades físicas regularmente?</p>
+                                <div class="contentButtons cigar flex-row-start-start-start flex-wrap m-bottom-60px">
+                                    <button type="button" name="button" class="buttonSelect first" value="true">Até 3 vezes ao dia</button>
+                                    <button type="button" name="button" class="buttonSelect second" value="false">De 3 a 5 vezes</button>
+                                    <button type="button" name="button" class="buttonSelect third" value="false">Mais de 5 vezes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="illustrations feeding horizontal-transition">
+                            <img src="../images/habits-behaviors/feeding-three.svg" alt="" class="activity three">
+                            <img src="../images/habits-behaviors/feeding-five.svg" alt="" class="activity five">
+                            <img src="../images/habits-behaviors/feeding-more.svg" alt="" class="activity more">
+                        </div>
+                    </div>
+                    <div class="quest second feeding">
+                        <p class="w-100p font-medium-15px color-black m-bottom-10px">Com qual frequência você consome os tipos de alimentos abaixo?</p>
+                        <div class="contentButtons flex-row-around-center-center m-bottom-60px">
+                            <div class="md-select candy">
+                                <img src="../images/habits-behaviors/candy.svg" alt="" class="labelFigure">
+                                <label for="ul-id"><button type="button" class="ng-binding">Doce</button></label>
+                                <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                    <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">Nunca</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Diariamente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Semanalmente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Raramente</li>
+                                </ul>
+                            </div>
+                            <div class="md-select meat">
+                                <img src="../images/habits-behaviors/steak.svg" alt="" class="labelFigure">
+                                <label for="ul-id"><button type="button" class="ng-binding">Carnes</button></label>
+                                <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                    <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">Nunca</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Diariamente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Semanalmente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Raramente</li>
+                                </ul>
+                            </div>
+                            <div class="md-select fruit">
+                                <img src="../images/habits-behaviors/fruit.svg" alt="" class="labelFigure">
+                                <label for="ul-id"><button type="button" class="ng-binding">Frutas</button></label>
+                                <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                    <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">Nunca</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Diariamente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Semanalmente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Raramente</li>
+                                </ul>
+                            </div>
+                            <div class="md-select vegetable">
+                                <img src="../images/habits-behaviors/vegetable.svg" alt="" class="labelFigure">
+                                <label for="ul-id"><button type="button" class="ng-binding">Vegetais</button></label>
+                                <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                    <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">Nunca</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Diariamente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Semanalmente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Raramente</li>
+                                </ul>
+                            </div>
+                            <div class="md-select cheese">
+                                <img src="../images/habits-behaviors/cheese.svg" alt="" class="labelFigure">
+                                <label for="ul-id"><button type="button" class="ng-binding">Derivados de leite</button></label>
+                                <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="state2_AK" name="ul-id">
+                                    <li role="option" id="state2_AK" class="ng-binding ng-scope active" tabindex="-1" aria-selected="true">Nunca</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Diariamente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Semanalmente</li>
+                                    <li role="option" id="state2_AL" class="ng-binding ng-scope" tabindex="-1" aria-selected="false">Raramente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box contentSteps flex-column-start-start-start m-top-40px">
+                <button type="button" name="button" class="goButton background-lightBlue color-white shadow-lightBlue">Próximas perguntas</button>
+                <div class="w-100p flex-column-center-center-center m-top-30px font-regular-15px">
+                    <a href="sleep.html" title="" class="link back">Voltar</a>
+                </div>
+                <div class="steps m-top-30px">
+                    <p class="w-100p font-regular-12px color-black text-align-center m-bottom-20px">5 / 5</p>
+                    <div class="bars flex-row-around-center-center">
+                        <div class="bar active"></div>
+                        <div class="bar active"></div>
+                        <div class="bar active"></div>
+                        <div class="bar active"></div>
+                        <div class="bar active"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bemtevi premed">
+            <div class="helper">
+                <img src="../images/bemtevi.png" alt="">
+                <div class="alert">
+                    <div class="alert-pulse">
+                        <p>?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <button type="button" name="button" class="closeButton"></button>
+                <p class="w-80p font-medium-12px color-black text-align-center">
+                    Aqui você pode considerar qualquer tipo de alimentação. Pode ser uma refeição completa ou um lanchinho da tarde.
+                </p>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../js/feeding-function.js" type="text/javascript"></script>
+        <script src="../js/bemtevi-premed-function.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $('.goButton').click(function(event) {
+                url = 'habits-behaviors-success.html';
+                window.location.replace(url);
+            });
+        </script>
+    </body>
+</html>
