@@ -44,6 +44,7 @@
         	}
 
             position: relative;
+            box-sizing: border-box;
 
             @media screen and (max-width: 1024px){
                 width: 100%;
@@ -66,17 +67,18 @@ header{
 }
 
 .form-container{
-    min-height: 100vh;
+    padding-top: 100px;
+    min-height: calc(100vh - 100px);
     overflow-x: hidden;
 
     @media screen and (max-width: 1441px){
-        padding-top: 85px;
-        min-height: calc(100vh - 85px);
+        padding-top: 100px;
+        min-height: calc(100vh - 100px);
     }
 
     @media screen and (max-width: 1025px){
-        padding-top: 85px;
-        min-height: calc(100vh - 85px);
+        padding-top: 100px;
+        min-height: calc(100vh - 100px);
     }
 
     &.premed{
@@ -86,6 +88,12 @@ header{
         }
     }
 }
+
+// .premed{
+//     .wrap{
+//         min-height: 500px;
+//     }
+// }
 
 .wrap{
     margin: 0 auto;

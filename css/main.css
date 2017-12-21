@@ -16,6 +16,13 @@
   align-items: center;
   align-content: center; }
 
+.flex-column-start-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center; }
+
 .flex-column-start-start-start {
   display: flex;
   flex-direction: column;
@@ -2625,7 +2632,7 @@
 
 ========================================================
 */
-.transition-cubic, button:active, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
@@ -2639,73 +2646,85 @@
   box-sizing: border-box; }
   .box.size15 {
     width: 15%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size15 {
         width: 100%; } }
   .box.size20 {
     width: 20%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size20 {
         width: 100%; } }
   .box.size25 {
     width: 25%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size25 {
         width: 100%; } }
   .box.size33 {
     width: 33.3%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size33 {
         width: 100%; } }
   .box.size50 {
     width: 50%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size50 {
         width: 100%; } }
   .box.size55 {
     width: 55%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size55 {
         width: 100%; } }
   .box.size60 {
     width: 66.6%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size60 {
         width: 100%; } }
   .box.size70 {
     width: 70%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size70 {
         width: 100%; } }
   .box.size80 {
     width: 80%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size80 {
         width: 100%; } }
   .box.size90 {
     width: 90%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size90 {
         width: 100%; } }
   .box.size95 {
     width: 95%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size95 {
         width: 100%; } }
   .box.size100 {
     width: 100%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size100 {
         width: 100%; } }
@@ -2719,16 +2738,17 @@ header {
       display: none; } }
 
 .form-container {
-  min-height: 100vh;
+  padding-top: 100px;
+  min-height: calc(100vh - 100px);
   overflow-x: hidden; }
   @media screen and (max-width: 1441px) {
     .form-container {
-      padding-top: 85px;
-      min-height: calc(100vh - 85px); } }
+      padding-top: 100px;
+      min-height: calc(100vh - 100px); } }
   @media screen and (max-width: 1025px) {
     .form-container {
-      padding-top: 85px;
-      min-height: calc(100vh - 85px); } }
+      padding-top: 100px;
+      min-height: calc(100vh - 100px); } }
   @media screen and (max-width: 615px) {
     .form-container.premed {
       padding-top: 10px;
@@ -2760,6 +2780,13 @@ header {
   align-items: center;
   align-content: center; }
 
+.flex-column-start-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center; }
+
 .flex-column-start-start-start {
   display: flex;
   flex-direction: column;
@@ -5369,7 +5396,7 @@ header {
 
 ========================================================
 */
-.transition-cubic, button:active, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 input[type="tel"]::-webkit-input-placeholder {
@@ -5386,19 +5413,11 @@ a, button, input[type="submit"], input[type="file"], input[type="tel"], textarea
   cursor: pointer;
   outline: none !important;
   -webkit-appearance: none;
-  margin: 0;
-  border: 0;
-  background: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 button {
   border: 0; }
-
-button:active {
-  transform: scale(1.1) !important;
-  outline: 0 !important;
-  -moz-outline: 0 !important;
-  -webkit-outline: 0 !important;
-  border: 0 !important; }
 
 button:focus {
   outline: 0 !important;
@@ -5625,7 +5644,8 @@ button:focus {
       padding: 60px 0 30px; }
       @media screen and (max-width: 870px) {
         .bemtevi.premed .modal.open {
-          padding: 30px 0; } }
+          padding: 30px 0;
+          right: 0; } }
       .bemtevi.premed .modal.open p {
         opacity: 1;
         transition-duration: 0.1s; }
@@ -5965,12 +5985,13 @@ button:focus {
   width: 40%;
   min-height: 400px;
   position: relative; }
+  @media screen and (max-width: 1024px) {
+    .person {
+      width: 10%; } }
   @media screen and (max-width: 870px) {
     .person {
-      width: 40%;
-      min-height: 320px;
-      position: absolute;
-      left: 0; } }
+      width: 20%;
+      min-height: 320px; } }
   .person .character {
     max-height: 100%;
     min-height: 30%;
@@ -5985,20 +6006,24 @@ button:focus {
     .weightPerson {
       padding-bottom: 20px;
       min-height: 340px;
-      width: 100% !important; } }
+      width: 30%; } }
   .weightPerson .person {
     width: 15%; }
     @media screen and (max-width: 880px) {
       .weightPerson .person {
-        width: 50%; } }
+        width: 20%; } }
     @media screen and (max-width: 650px) {
       .weightPerson .person {
-        left: 5%; } }
+        width: 40%;
+        left: 0; } }
   .weightPerson .properties {
     width: 15%; }
+    @media screen and (max-width: 1025px) {
+      .weightPerson .properties {
+        width: 25%; } }
     @media screen and (max-width: 880px) {
       .weightPerson .properties {
-        width: 100%; } }
+        width: 30%; } }
 
 .properties {
   width: 50%;
@@ -6011,9 +6036,9 @@ button:focus {
       min-width: 55px !important;
       position: absolute;
       margin-top: 0; }
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 870px) {
         .properties .ruler .heightPerson {
-          right: 10%;
+          right: -5%;
           left: auto; } }
       .properties .ruler .heightPerson .meters {
         font-size: 15px; }
@@ -6060,16 +6085,24 @@ button:focus {
   box-sizing: border-box;
   position: relative;
   margin-left: 10%; }
+  @media screen and (max-width: 1024px) {
+    .weight, .height {
+      width: 33%;
+      margin-left: 0; } }
   @media screen and (max-width: 870px) {
     .weight, .height {
+      width: 30%;
       margin-left: 0; } }
   .weight .quantity, .height .quantity {
     width: 205px;
     position: relative;
     flex-wrap: wrap; }
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 1024px) {
       .weight .quantity, .height .quantity {
-        width: 90%; } }
+        width: 60%; } }
+    @media screen and (max-width: 870px) {
+      .weight .quantity, .height .quantity {
+        width: 100%; } }
   @media screen and (max-width: 650px) {
     .weight .quantity.weight, .height .quantity.weight {
       min-height: 50px; } }
@@ -6128,10 +6161,10 @@ button:focus {
     height: 20%;
     width: 295px;
     z-index: 40; }
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 870px) {
       .weight .quantity-nav, .height .quantity-nav {
         width: 45px;
-        right: 10%;
+        right: 0;
         left: auto; } }
     .weight .quantity-nav .quantity-button, .height .quantity-nav .quantity-button {
       position: relative;
@@ -6159,6 +6192,37 @@ button:focus {
       background-size: 100%;
       top: 70px;
       left: 50%; }
+
+@media screen and (max-width: 650px) {
+  .height.properties {
+    width: 60%; }
+  .height .quantity .heightPerson {
+    right: 5%; }
+  .height .quantity .meters {
+    right: -5%; }
+  .height .quantity #height {
+    margin-left: 0;
+    left: 0; }
+  .height .quantity .quantity-nav {
+    right: 5%; } }
+
+@media screen and (max-width: 1025px) {
+  .weight {
+    width: 100%; }
+    .weight .quantity {
+      width: 100%; } }
+@media screen and (max-width: 870px) {
+  .weight {
+    width: 100%; }
+    .weight .quantity-nav {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%); } }
+@media screen and (max-width: 650px) {
+  .weight {
+    right: 15%; }
+    .weight .quantity input {
+      right: 25%; } }
 
 .errorMin, .errorMax {
   display: none;
@@ -6349,12 +6413,15 @@ button:focus {
       min-height: 270px;
       margin: 0 0 0 2%;
       position: relative; }
-      @media screen and (max-width: 870px) {
+      @media screen and (max-width: 890px) {
         .optionForm .illustrations.feeding {
           width: 70%;
           margin-bottom: 20px;
-          min-height: 125px;
+          min-height: 250px;
           margin: 0 0 20px; } }
+      @media screen and (max-width: 650px) {
+        .optionForm .illustrations.feeding {
+          min-height: 125px; } }
       .optionForm .illustrations.feeding .activity {
         margin: 0;
         opacity: 0;
@@ -6415,6 +6482,8 @@ button:focus {
       height: 2px;
       position: absolute;
       bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 150px;
       background: #45C6D6;
       content: ''; }
@@ -6447,6 +6516,9 @@ button:focus {
       max-width: 85%;
       flex-wrap: wrap;
       justify-content: flex-start; } }
+  @media screen and (max-width: 890px) {
+    .quest.feeding {
+      max-width: 100%; } }
   @media screen and (max-width: 650px) {
     .quest.feeding {
       max-width: 90%; } }

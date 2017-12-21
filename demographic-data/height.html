@@ -11,7 +11,7 @@
             <img class="w-120px" src="../images/logo-medpass.png" alt="Logo MedPass">
         </header>
 
-        <div class="premed form-container w-100p background-lightGrey flex-column-center-center-center">
+        <div class="premed form-container w-100p background-lightGrey flex-column-start-center-center">
 
             <div class="info-user wrap box size100 flex-row-between-center-center">
 
@@ -21,7 +21,7 @@
                         <div class="person">
                             <img id="character" class="character" src="../images/characters/white-man.svg" alt="">
                         </div>
-                        <div class="weight properties flex-column-center-center-center">
+                        <div class="height properties flex-column-center-center-center">
                             <div class="quantity ruler flex-row-between-center-center m-bottom-20px">
                                 <input type="number" value="1.60" class="heightPerson top-50p left-70p translate-vertical font-medium-35px color-black m-top-20px m-20px" />
                                 <p class="meters font-medium-20px color-black m-top-10px m-bottom-20px top-50p translate-vertical">m</p>
@@ -53,10 +53,10 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/common-functions.js" type="text/javascript"></script>
         <script src="../js/height-function.js" type="text/javascript"></script>
         <script type="text/javascript">
-            document.addEventListener("touchstart", function(){}, true);
-                                    $('.goButton').click(function(event) {
+            $('.goButton').click(function(event) {
                 url = 'weight.html';
                 window.location.replace(url);
             });

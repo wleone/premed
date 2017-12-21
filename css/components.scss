@@ -12,22 +12,12 @@ a, button, input[type="submit"], input[type="file"], input[type="tel"], textarea
     cursor: pointer;
     outline: none !important;
     -webkit-appearance: none;
-    margin: 0;
-    border: 0;
-    background: transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
 }
 
 button{
     border: 0;
-}
-
-button:active{
-    @extend .transition-cubic ;
-    transform: scale(1.1) !important;
-    outline: 0 !important;
-    -moz-outline: 0 !important;
-    -webkit-outline: 0 !important;
-    border: 0 !important;
 }
 
 button:focus{
@@ -342,6 +332,7 @@ button:focus{
 
             @media screen and (max-width: 870px){
                 padding: 30px 0;
+                right: 0;
             }
 
             p{
@@ -827,11 +818,13 @@ button:focus{
     min-height: 400px;
     position: relative;
 
+    @media screen and (max-width: 1024px){
+        width: 10%;
+    }
+
     @media screen and (max-width: 870px){
-        width: 40%;
+        width: 20%;
         min-height: 320px;
-        position: absolute;
-        left: 0;
     }
 
     .character{
@@ -851,25 +844,30 @@ button:focus{
     @media screen and (max-width: 880px){
         padding-bottom: 20px;
         min-height: 340px;
-        width: 100% !important;
+        width: 30%;
     }
 
     .person{
         width: 15%;
 
         @media screen and (max-width: 880px){
-            width: 50%;
+            width: 20%;
         }
 
         @media screen and (max-width: 650px){
-            left: 5%;
+            width: 40%;
+            left: 0;
         }
     }
     .properties{
         width: 15%;
 
+        @media screen and (max-width: 1025px){
+            width: 25%;
+        }
+
         @media screen and (max-width: 880px){
-            width: 100%;
+            width: 30%;
         }
     }
 }
@@ -888,8 +886,8 @@ button:focus{
             position: absolute;
             margin-top: 0;
 
-            @media screen and (max-width: 650px){
-                right: 10%;
+            @media screen and (max-width: 870px){
+                right: -5%;
                 left: auto;
             }
 
@@ -953,7 +951,13 @@ button:focus{
     position: relative;
     margin-left: 10%;
 
+    @media screen and (max-width: 1024px){
+        width: 33%;
+        margin-left: 0;
+    }
+
     @media screen and (max-width: 870px){
+        width: 30%;
         margin-left: 0;
     }
 
@@ -963,8 +967,12 @@ button:focus{
         flex-wrap: wrap;
         @extend .transition-cubic ;
 
-        @media screen and (max-width: 650px){
-            width: 90%;
+        @media screen and (max-width: 1024px){
+            width: 60%;
+        }
+
+        @media screen and (max-width: 870px){
+            width: 100%;
         }
     }
 
@@ -1055,9 +1063,9 @@ button:focus{
         z-index: 40;
         @extend .transition-cubic ;
 
-        @media screen and (max-width: 650px){
+        @media screen and (max-width: 870px){
             width: 45px;
-            right: 10%;
+            right: 0;
             left: auto;
         }
 
@@ -1092,6 +1100,59 @@ button:focus{
             top: 70px;
             left: 50%;
             @extend .translate-horizontal ;
+        }
+    }
+}
+
+.height{
+    @media screen and (max-width: 650px){
+        &.properties{
+            width: 60%;
+        }
+        .quantity{
+            .heightPerson{
+                right: 5%;
+            }
+            .meters{
+                right: -5%;
+            }
+            #height{
+                margin-left: 0;
+                left: 0;
+            }
+            .quantity-nav{
+                right: 5%;
+            }
+        }
+    }
+}
+
+.weight{
+    @media screen and (max-width: 1025px){
+        width: 100%;
+
+        .quantity{
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 870px){
+        width: 100%;
+
+        .quantity-nav{
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        right: 15%;
+
+        .quantity{
+            input{
+                right: 25%;
+            }
         }
     }
 }
@@ -1374,11 +1435,15 @@ button:focus{
             margin: 0 0 0 2%;
             position: relative;
 
-            @media screen and (max-width: 870px){
+            @media screen and (max-width: 890px){
                 width: 70%;
                 margin-bottom: 20px;
-                min-height: 125px;
+                min-height: 250px;
                 margin: 0 0 20px;
+            }
+
+            @media screen and (max-width: 650px){
+                min-height: 125px;
             }
 
             .activity{
@@ -1458,6 +1523,8 @@ button:focus{
             height: 2px;
             position: absolute;
             bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 150px;
             background: #45C6D6;
             content: '';
@@ -1520,6 +1587,10 @@ button:focus{
         max-width: 85%;
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    @media screen and (max-width: 890px){
+        max-width: 100%;
     }
 
     @media screen and (max-width: 650px){

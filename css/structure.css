@@ -15,6 +15,13 @@
   align-items: center;
   align-content: center; }
 
+.flex-column-start-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center; }
+
 .flex-column-start-start-start {
   display: flex;
   flex-direction: column;
@@ -2638,73 +2645,85 @@
   box-sizing: border-box; }
   .box.size15 {
     width: 15%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size15 {
         width: 100%; } }
   .box.size20 {
     width: 20%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size20 {
         width: 100%; } }
   .box.size25 {
     width: 25%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size25 {
         width: 100%; } }
   .box.size33 {
     width: 33.3%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size33 {
         width: 100%; } }
   .box.size50 {
     width: 50%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size50 {
         width: 100%; } }
   .box.size55 {
     width: 55%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size55 {
         width: 100%; } }
   .box.size60 {
     width: 66.6%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size60 {
         width: 100%; } }
   .box.size70 {
     width: 70%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size70 {
         width: 100%; } }
   .box.size80 {
     width: 80%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size80 {
         width: 100%; } }
   .box.size90 {
     width: 90%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size90 {
         width: 100%; } }
   .box.size95 {
     width: 95%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size95 {
         width: 100%; } }
   .box.size100 {
     width: 100%;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     @media screen and (max-width: 1024px) {
       .box.size100 {
         width: 100%; } }
@@ -2718,16 +2737,17 @@ header {
       display: none; } }
 
 .form-container {
-  min-height: 100vh;
+  padding-top: 100px;
+  min-height: calc(100vh - 100px);
   overflow-x: hidden; }
   @media screen and (max-width: 1441px) {
     .form-container {
-      padding-top: 85px;
-      min-height: calc(100vh - 85px); } }
+      padding-top: 100px;
+      min-height: calc(100vh - 100px); } }
   @media screen and (max-width: 1025px) {
     .form-container {
-      padding-top: 85px;
-      min-height: calc(100vh - 85px); } }
+      padding-top: 100px;
+      min-height: calc(100vh - 100px); } }
   @media screen and (max-width: 615px) {
     .form-container.premed {
       padding-top: 10px;
