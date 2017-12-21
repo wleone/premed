@@ -2625,7 +2625,7 @@
 
 ========================================================
 */
-.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
+.transition-cubic, button:active, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
@@ -5369,20 +5369,42 @@ header {
 
 ========================================================
 */
-.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=number], .height input[type=number], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
+.transition-cubic, button:active, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
-input[type="number"]::-webkit-input-placeholder {
+input[type="tel"]::-webkit-input-placeholder {
   color: #45C6D6; }
 
-input[type="number"]:-moz-placeholder {
+input[type="tel"]:-moz-placeholder {
   color: #45C6D6; }
 
-a, button, input[type="submit"], input[type="file"], input[type="number"] {
-  cursor: pointer;
-  outline: none;
+input {
   -webkit-appearance: none;
-  margin: 0; }
+  outline: none; }
+
+a, button, input[type="submit"], input[type="file"], input[type="tel"], textarea, input, button:active, button:checked, button:focus, a:active, a:checked, a:focus {
+  cursor: pointer;
+  outline: none !important;
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  background: transparent; }
+
+button {
+  border: 0; }
+
+button:active {
+  transform: scale(1.1) !important;
+  outline: 0 !important;
+  -moz-outline: 0 !important;
+  -webkit-outline: 0 !important;
+  border: 0 !important; }
+
+button:focus {
+  outline: 0 !important;
+  -moz-outline: 0 !important;
+  -webkit-outline: 0 !important;
+  border: 0 !important; }
 
 .link {
   text-align: center;
@@ -5393,9 +5415,6 @@ a, button, input[type="submit"], input[type="file"], input[type="number"] {
   margin-left: -25px;
   background: url("../images/background/icon-back.svg") left center no-repeat;
   background-size: 22px; }
-
-button {
-  border: 0; }
 
 /*
 ====================================================================================================================================================
@@ -5435,6 +5454,8 @@ button {
         margin: 0 0 0; } }
     @media screen and (max-width: 650px) {
       .slider .description {
+        margin: 10px 0;
+        min-height: auto;
         padding: 0; }
         .slider .description p {
           font-size: 11px;
@@ -5474,7 +5495,8 @@ button {
   outline: none;
   position: relative;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 40px; }
 
 /*
 ====================================================================================================================================================
@@ -5498,6 +5520,7 @@ button {
     visibility: hidden; }
     @media screen and (max-width: 870px) {
       .bemtevi.premed {
+        width: auto;
         bottom: -10px;
         right: 10px;
         top: auto;
@@ -5596,6 +5619,7 @@ button {
           .bemtevi.premed .modal p {
             margin: 15px 0; } }
     .bemtevi.premed .modal.open {
+      width: 300px;
       height: auto;
       overflow: auto;
       padding: 60px 0 30px; }
@@ -6049,12 +6073,12 @@ button {
   @media screen and (max-width: 650px) {
     .weight .quantity.weight, .height .quantity.weight {
       min-height: 50px; } }
-  .weight input[type=number]::-webkit-inner-spin-button,
-  .weight input[type=number]::-webkit-outer-spin-button, .height input[type=number]::-webkit-inner-spin-button,
-  .height input[type=number]::-webkit-outer-spin-button {
+  .weight input[type=tel]::-webkit-inner-spin-button,
+  .weight input[type=tel]::-webkit-outer-spin-button, .height input[type=tel]::-webkit-inner-spin-button,
+  .height input[type=tel]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0; }
-  .weight input[type=number], .height input[type=number] {
+  .weight input[type=tel], .height input[type=tel] {
     margin: 10px 0 0 0;
     text-align: right;
     -moz-appearance: textfield; }
@@ -6383,9 +6407,10 @@ button {
         margin-bottom: 30px;
         justify-content: center;
         flex-wrap: wrap; } }
-    .optionForm .contentButtons.cigar input[type="number"] {
+    .optionForm .contentButtons.cigar input[type="tel"] {
       border: 0;
-      background: transparent; }
+      background: transparent;
+      -webkit-appearance: none; }
     .optionForm .contentButtons.cigar-perday:after, .optionForm .contentButtons.cigar-years:after {
       height: 2px;
       position: absolute;
@@ -6409,6 +6434,9 @@ button {
       .optionForm .contentButtons button.small {
         min-width: 135px;
         width: 35%; }
+    @media screen and (max-width: 870px) {
+      .optionForm .contentButtons button:hover {
+        background-color: #45C6D6; } }
 
 .quest.feeding {
   max-width: 1020px;

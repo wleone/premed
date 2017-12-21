@@ -94,7 +94,8 @@
         <script src="../js/physical-activity-function.js" type="text/javascript"></script>
         <script src="../js/bemtevi-premed-function.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $('.goButton').click(function(event) {
+            document.addEventListener("touchstart", function(){}, true);
+                                    $('.goButton').click(function(event) {
                 url = 'smoke.html';
                 window.location.replace(url);
             });

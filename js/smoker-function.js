@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
         $(".quest.smoker").fadeOut();
         $(".quest.exSmoker").fadeOut();
 
-        input = $('input[type="number"]');
+        input = $('input[type="tel"]');
         var oldVal = parseFloat(input.val());
         var newVal = oldVal * 0;
         input.val(newVal);
@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
             $(".quest.exSmoker").fadeIn();
         }, 500);
 
-        input = $('input[type="number"]');
+        input = $('input[type="tel"]');
         var oldVal = parseFloat(input.val());
         var newVal = oldVal * 0;
         input.val(newVal);
@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
     cigarretAnimation();
 
     function cigarretAnimation() {
-        $(".cigar-perday input[type='number']").change(function() {
+        $(".cigar-perday input[type='tel']").change(function() {
             if ( $(this).val() > 0 ) {
                 setTimeout( function(){
                     $(".cigarret:nth-child(1)").addClass('showCigarret');

@@ -24,7 +24,7 @@
                         <div class="properties flex-column-center-center-center">
                             <div class="weight">
                                 <div class="quantity weight flex-row-center-center-center">
-                                    <input type="number" class="weight" value="60" min="20" max="200">
+                                    <input type="tel" class="weight" value="60" min="20" max="200">
                                     <p class="kg font-medium-20px color-black m-top-20px m-bottom-20px">kg</p>
                                 </div>
                             </div>
@@ -62,7 +62,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="../js/weight-function.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $('.goButton').click(function(event) {
+            document.addEventListener("touchstart", function(){}, true);
+                                    $('.goButton').click(function(event) {
                 url = 'circumference.html';
                 window.location.replace(url);
             });

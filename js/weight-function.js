@@ -1,7 +1,7 @@
 $(document).ready(function() {
     jQuery('<div class="quantity-nav flex-row-between-center-center top-Zp"><div class="quantity-button quantity-down"></div><div class="quantity-button quantity-up"></div></div>').insertAfter('.kg');
 
-    input = $('input[type="number"]');
+    input = $('input[type="tel"]');
     var newVal = parseFloat(input.val());
     var calc = newVal / 2;
     var result = 1 + calc/200.0;
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $('.weight').keyup(function() {
         setTimeout(function(){
-            input = $('input[type="number"]');
+            input = $('input[type="tel"]');
             var newVal = parseFloat(input.val());
 
             if( newVal > 200 ){
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
     jQuery('.quantity').each(function() {
         var spinner = jQuery(this),
-            input = spinner.find('input[type="number"]'),
+            input = spinner.find('input[type="tel"]'),
             btnUp = spinner.find('.quantity-up'),
             btnDown = spinner.find('.quantity-down'),
             min = input.attr('min'),

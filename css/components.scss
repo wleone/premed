@@ -1,15 +1,40 @@
-input[type="number"]::-webkit-input-placeholder {
+input[type="tel"]::-webkit-input-placeholder {
     color: #45C6D6;
 }
-input[type="number"]:-moz-placeholder {
+input[type="tel"]:-moz-placeholder {
     color: #45C6D6;
 }
-
-a, button, input[type="submit"], input[type="file"], input[type="number"]{
-    cursor: pointer;
+input{
+    -webkit-appearance: none;
     outline: none;
+}
+a, button, input[type="submit"], input[type="file"], input[type="tel"], textarea, input, button:active, button:checked, button:focus, a:active, a:checked, a:focus{
+    cursor: pointer;
+    outline: none !important;
     -webkit-appearance: none;
     margin: 0;
+    border: 0;
+    background: transparent;
+}
+
+button{
+    border: 0;
+}
+
+button:active{
+    @extend .transition-cubic ;
+    transform: scale(1.1) !important;
+    outline: 0 !important;
+    -moz-outline: 0 !important;
+    -webkit-outline: 0 !important;
+    border: 0 !important;
+}
+
+button:focus{
+    outline: 0 !important;
+    -moz-outline: 0 !important;
+    -webkit-outline: 0 !important;
+    border: 0 !important;
 }
 
 .link{
@@ -24,10 +49,6 @@ a, button, input[type="submit"], input[type="file"], input[type="number"]{
     background-size: 22px;
 
     @extend .color-lightBlue ;
-}
-
-button{
-    border: 0;
 }
 
 /*
@@ -85,6 +106,8 @@ button{
         }
 
         @media screen and (max-width: 650px){
+            margin: 10px 0;
+            min-height: auto;
             padding: 0;
 
             p{
@@ -141,6 +164,7 @@ button{
         position: relative;
         text-align: center;
         text-decoration: none;
+        margin-bottom: 40px;
         @extend .font-medium-12px ;
         @extend .color-black ;
         @extend .background-white ;
@@ -173,6 +197,7 @@ button{
         visibility: hidden;
 
         @media screen and (max-width: 870px){
+            width: auto;
             bottom: -10px;
             right: 10px;
             top: auto;
@@ -310,6 +335,7 @@ button{
         // ANIMATIONS
 
         .modal.open{
+            width: 300px;
             height: auto;
             overflow: auto;
             padding: 60px 0 30px;
@@ -948,14 +974,14 @@ button{
         }
     }
 
-    input[type=number]::-webkit-inner-spin-button,
-    input[type=number]::-webkit-outer-spin-button
+    input[type=tel]::-webkit-inner-spin-button,
+    input[type=tel]::-webkit-outer-spin-button
     {
         -webkit-appearance: none;
         margin: 0;
     }
 
-    input[type=number]
+    input[type=tel]
     {
         margin: 10px 0 0 0;
         text-align: right ;
@@ -1421,9 +1447,10 @@ button{
         }
 
         &.cigar{
-            input[type="number"]{
+            input[type="tel"]{
                 border: 0;
                 background: transparent;
+                -webkit-appearance: none;
             }
         }
 
@@ -1466,6 +1493,10 @@ button{
             @extend .background-black ;
             @extend .color-white ;
             @extend .shadow-black ;
+
+            @media screen and (max-width: 870px){
+                background-color: #45C6D6;
+            }
         }
         button.active{
             @extend .background-lightBlue ;

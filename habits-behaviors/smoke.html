@@ -30,7 +30,7 @@
                             <div class="quest second smoker">
                                 <p class="w-100p font-medium-15px color-black m-bottom-10px">Quantos cigarros você fuma?</p>
                                 <div class="contentButtons cigar cigar-perday flex-row-start-center-center flex-wrap m-bottom-60px">
-                                    <input type="number" name="" value="0" min="0" max="50" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
+                                    <input type="tel" name="" value="0" min="0" max="50" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
                                     <p class="font-medium-15px color-lightBlue">cigarros por dia</p>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                             <div class="quest third smoker">
                                 <p class="w-100p font-medium-15px color-black m-bottom-10px">Faz quanto tempo que você fuma?</p>
                                 <div class="contentButtons cigar cigar-years flex-row-start-center-center flex-wrap m-bottom-60px">
-                                    <input type="number" name="" value="0" min="0" max="90" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
+                                    <input type="tel" name="" value="0" min="0" max="90" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
                                     <p class="font-medium-15px color-lightBlue">anos</p>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                             <div class="quest fourth exSmoker">
                                 <p class="w-100p font-medium-15px color-black m-bottom-10px">Você parou de fumar há quantos anos?</p>
                                 <div class="contentButtons cigar cigar-years flex-row-start-center-center flex-wrap m-bottom-60px">
-                                    <input type="number" name="" value="0" min="0" max="90" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
+                                    <input type="tel" name="" value="0" min="0" max="90" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
                                     <p class="font-medium-15px color-lightBlue">anos</p>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                             <div class="quest fifth exSmoker">
                                 <p class="w-100p font-medium-15px color-black m-bottom-10px">Durante quantos anos você fumou?</p>
                                 <div class="contentButtons cigar cigar-years flex-row-start-center-center flex-wrap m-bottom-60px">
-                                    <input type="number" name="" value="0" min="0" max="90" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
+                                    <input type="tel" name="" value="0" min="0" max="90" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
                                     <p class="font-medium-15px color-lightBlue">anos</p>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                             <div class="quest sixtieth exSmoker">
                                 <p class="w-100p font-medium-15px color-black m-bottom-10px">Quantos cigarros você fumava por dia?</p>
                                 <div class="contentButtons cigar cigar-perday flex-row-start-center-center flex-wrap m-bottom-60px">
-                                    <input type="number" name="" value="0" min="0" max="50" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
+                                    <input type="tel" name="" value="0" min="0" max="50" class="w-80px m-right-10px text-align-center font-medium-50px color-lightBlue">
                                     <p class="font-medium-15px color-lightBlue">cigarros por dia</p>
                                 </div>
                             </div>
@@ -132,7 +132,8 @@
         <script src="../js/smoker-function.js" type="text/javascript"></script>
         <script src="../js/bemtevi-premed-function.js" type="text/javascript"></script>
         <script type="text/javascript">
-            $('.goButton').click(function(event) {
+            document.addEventListener("touchstart", function(){}, true);
+                        $('.goButton').click(function(event) {
                 url = 'beverage.html';
                 window.location.replace(url);
             });
