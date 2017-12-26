@@ -15,7 +15,9 @@ a, button, input[type="submit"], input[type="file"], input[type="tel"], textarea
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -moz-tap-highlight-color: rgba(0,0,0,0);
 }
-
+small {
+    display: block;
+}
 button{
     border: 0;
 }
@@ -596,6 +598,7 @@ button:focus{
 .steps, .slick-dots{
     width: 220px;
     box-sizing: border-box;
+    margin: 20px 0 40px;
 
     @media screen and (max-width: 650px){
         margin-top: 15px;
@@ -1209,6 +1212,55 @@ button:focus{
                 text-align: center;
             }
         }
+
+        &.selectOptions {
+            width: 80%;
+
+            @media screen and (max-width: 880px) {
+                width: 100%;
+            }
+
+            .contentButtons {
+                width: 100%;
+
+                @media screen and (max-width: 880px){
+                    flex-flow: column;
+                    justify-content: center;
+                }
+
+                button{
+                    width: 45%;
+                    height: 70px;
+                    text-align: left;
+                    position: relative;
+                    box-sizing: border-box;
+                    @extend .flex-row-between-center-center ;
+
+                    @media screen and (max-width: 615px) {
+                        width: 80%;
+                    }
+
+                    img, svg{
+                        width: 100%;
+                        height: 100%;
+                        max-width: 40px;
+                        max-height: 40px;
+                        margin: 0 15px;
+                        @extend .transition-cubic ;
+                        @extend .fill-black ;
+                    }
+                    &:hover img, &:hover svg{
+                        @extend .fill-white ;
+                    }
+                    &.active img, &.active svg {
+                        @extend .fill-white ;
+                    }
+                    .content{
+                        width: calc(100% - 75px);
+                    }
+                }
+            }
+        }
     }
 
     .quest:first-child{
@@ -1493,6 +1545,14 @@ button:focus{
                 @media screen and (max-width: 870px){
                     top: 50%;
                 }
+            }
+        }
+
+        &.problems {
+            width: 100%;
+            margin: 0 1.5%;
+            @media screen and (max-width: 870px) {
+                margin-bottom: 20px;
             }
         }
     }

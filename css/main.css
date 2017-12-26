@@ -93,7 +93,7 @@
   align-items: flex-end;
   align-content: center; }
 
-.flex-row-between-center-center {
+.flex-row-between-center-center, .optionForm .quest.selectOptions .contentButtons button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2628,11 +2628,37 @@
 /*
 ========================================================
 
+                         FILL COLOR
+                       (used on svg)
+
+========================================================
+*/
+.fill-lightBlue {
+  fill: #45C6D6; }
+
+.fill-white, .optionForm .quest.selectOptions .contentButtons button:hover img, .optionForm .quest.selectOptions .contentButtons button:hover svg, .optionForm .quest.selectOptions .contentButtons button.active img, .optionForm .quest.selectOptions .contentButtons button.active svg {
+  fill: #FFFFFF; }
+
+.fill-black, .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg {
+  fill: #575957; }
+
+.fill-lightBlue {
+  fill: #45C6D6; }
+
+.fill-red {
+  fill: #E05D6D; }
+
+.fill-lightGreen {
+  fill: #50E3C2; }
+
+/*
+========================================================
+
                         TRANSITIONS
 
 ========================================================
 */
-.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 * {
@@ -2857,7 +2883,7 @@ header {
   align-items: flex-end;
   align-content: center; }
 
-.flex-row-between-center-center {
+.flex-row-between-center-center, .optionForm .quest.selectOptions .contentButtons button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -5392,11 +5418,37 @@ header {
 /*
 ========================================================
 
+                         FILL COLOR
+                       (used on svg)
+
+========================================================
+*/
+.fill-lightBlue {
+  fill: #45C6D6; }
+
+.fill-white, .optionForm .quest.selectOptions .contentButtons button:hover img, .optionForm .quest.selectOptions .contentButtons button:hover svg, .optionForm .quest.selectOptions .contentButtons button.active img, .optionForm .quest.selectOptions .contentButtons button.active svg {
+  fill: #FFFFFF; }
+
+.fill-black, .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg {
+  fill: #575957; }
+
+.fill-lightBlue {
+  fill: #45C6D6; }
+
+.fill-red {
+  fill: #E05D6D; }
+
+.fill-lightGreen {
+  fill: #50E3C2; }
+
+/*
+========================================================
+
                         TRANSITIONS
 
 ========================================================
 */
-.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
+.transition-cubic, .bemtevi.premed .modal, .bemtevi.premed .modal .closeButton, .choose-ethnicity .container .card, .md-select [type=button], .md-select ul[role=listbox], .md-select ul[role=listbox] li, .person .character, .weight .quantity, .height .quantity, .weight input[type=tel], .height input[type=tel], .weight .quantity input, .height .quantity input, .weight .quantity-nav, .height .quantity-nav, .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg, .optionForm .illustrations img, .optionForm .contentButtons button, .quest.feeding .md-select [type=button], .quest.feeding .md-select [type=button]:before, .quest.feeding .md-select ul[role=listbox], .quest.feeding .md-select ul[role=listbox] li, .intro.premed .links a {
   transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1); }
 
 input[type="tel"]::-webkit-input-placeholder {
@@ -5415,6 +5467,9 @@ a, button, input[type="submit"], input[type="file"], input[type="tel"], textarea
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+small {
+  display: block; }
 
 button {
   border: 0; }
@@ -5833,7 +5888,8 @@ button:focus {
 
 .steps, .slick-dots {
   width: 220px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 20px 0 40px; }
   @media screen and (max-width: 650px) {
     .steps, .slick-dots {
       margin-top: 15px; } }
@@ -6263,6 +6319,34 @@ button:focus {
     @media screen and (max-width: 870px) {
       .optionForm .quest p {
         text-align: center; } }
+    .optionForm .quest.selectOptions {
+      width: 80%; }
+      @media screen and (max-width: 880px) {
+        .optionForm .quest.selectOptions {
+          width: 100%; } }
+      .optionForm .quest.selectOptions .contentButtons {
+        width: 100%; }
+        @media screen and (max-width: 880px) {
+          .optionForm .quest.selectOptions .contentButtons {
+            flex-flow: column;
+            justify-content: center; } }
+        .optionForm .quest.selectOptions .contentButtons button {
+          width: 45%;
+          height: 70px;
+          text-align: left;
+          position: relative;
+          box-sizing: border-box; }
+          @media screen and (max-width: 615px) {
+            .optionForm .quest.selectOptions .contentButtons button {
+              width: 80%; } }
+          .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg {
+            width: 100%;
+            height: 100%;
+            max-width: 40px;
+            max-height: 40px;
+            margin: 0 15px; }
+          .optionForm .quest.selectOptions .contentButtons button .content {
+            width: calc(100% - 75px); }
   .optionForm .quest:first-child {
     display: block; }
   .optionForm .illustrations {
@@ -6461,6 +6545,12 @@ button:focus {
         @media screen and (max-width: 870px) {
           .optionForm .illustrations.feeding img.more {
             top: 50%; } }
+    .optionForm .illustrations.problems {
+      width: 100%;
+      margin: 0 1.5%; }
+      @media screen and (max-width: 870px) {
+        .optionForm .illustrations.problems {
+          margin-bottom: 20px; } }
   .optionForm .contentButtons {
     width: 65%;
     min-width: 460px;
