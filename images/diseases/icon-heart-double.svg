@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="45px" viewBox="0 0 56 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Hearts</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.3%" y="-31.4%" width="118.6%" height="174.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="1 7 6 6 9 8 11 10 11 13 9 18 9 22 15 22 23 22 25 22 25 0 0.978271134 0"></polygon>
+    </defs>
+    <g id="Áreas-de-Sensibilidade---2-/-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-438.000000, -250.000000)">
+        <g id="Content" transform="translate(423.000000, 145.000000)">
+            <g id="Mais-de-uma-pessoa?">
+                <g id="Options" transform="translate(8.000000, 90.000000)">
+                    <g id="Sim" filter="url(#filter-1)">
+                        <g id="Rectangle-9">
+                            <g id="Hearts" transform="translate(17.000000, 22.000000)">
+                                <g id="Shape-Copy" transform="translate(12.000000, 0.000000)">
+                                    <mask id="mask-3" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <use id="Mask" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-2"></use>
+                                    <path d="M17.8917188,1 C15.3403083,1 13.6192655,2.29799928 12.72,3.21777477 C11.8207345,2.29799928 10.0996917,1 7.54828125,1 C4.00013156,1 1.5,4.16170624 1.5,7.89334417 C1.5,13.664073 7.21943883,18.0725185 12.3194548,20.7027491 C12.5708529,20.832417 12.8691471,20.832417 13.1205452,20.7027491 C18.2231909,18.0711985 23.94,13.667065 23.94,7.89334417 C23.94,4.16830624 21.4455223,1 17.8917188,1 Z M12.72,18.927746 C8.41892695,16.6462153 3.253125,12.7472015 3.253125,7.89334417 C3.253125,5.22056566 4.92012773,2.75999902 7.54828125,2.75999902 C9.62165836,2.75999902 11.2635037,3.98680634 11.9845641,5.06480574 C12.1445367,5.3178056 12.4194705,5.46815352 12.7180716,5.46960552 C13.018338,5.47066152 13.2945429,5.3154296 13.4567508,5.06282574 C13.4715209,5.03976976 14.969347,2.75999902 17.8917187,2.75999902 C20.520442,2.75999902 22.186875,5.22157765 22.186875,7.89334417 C22.186875,12.7441655 17.0120006,16.6510113 12.72,18.927746 Z" stroke="#575957" stroke-width="0.5" fill="#575957" fill-rule="nonzero" mask="url(#mask-3)"></path>
+                                </g>
+                                <path d="M17.0929688,5.5 C14.432407,5.5 12.6377367,6.85352866 11.7,7.81265283 C10.7622633,6.85352866 8.96759297,5.5 6.30703125,5.5 C2.60708906,5.5 0,8.7969664 0,12.6882466 C0,18.7058515 5.9641207,23.3028936 11.2823191,26.0456474 C11.5444723,26.1808626 11.8555277,26.1808626 12.1176809,26.0456474 C17.4386215,23.3015172 23.4,18.7089715 23.4,12.6882466 C23.4,8.80384875 20.7988066,5.5 17.0929688,5.5 Z M11.7,24.1947084 C7.21492383,21.8155721 1.828125,17.7497555 1.828125,12.6882466 C1.828125,9.90112461 3.56644336,7.3352931 6.30703125,7.3352931 C8.46910898,7.3352931 10.1811937,8.61458415 10.9331016,9.73870117 C11.099918,10.0025246 11.3866137,10.1593045 11.6979891,10.1608186 C12.0111012,10.1619198 12.2991223,10.0000469 12.4682695,9.73663647 C12.4836715,9.71259413 14.0455758,7.3352931 17.0929687,7.3352931 C19.8341508,7.3352931 21.571875,9.90217991 21.571875,12.6882466 C21.571875,17.7465897 16.1756156,21.8205733 11.7,24.1947084 Z" id="Shape" stroke="#575957" stroke-width="0.5" fill="#575957" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

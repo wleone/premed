@@ -287,22 +287,46 @@
 ========================================================
 */
 .fill-lightBlue {
-  fill: #45C6D6; }
+  fill: #45C6D6;
+  stroke: #45C6D6;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-white {
-  fill: #FFFFFF; }
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-black {
-  fill: #575957; }
+  fill: #575957;
+  stroke: #575957;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-lightBlue {
-  fill: #45C6D6; }
+  fill: #45C6D6;
+  stroke: #45C6D6;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-red {
-  fill: #E05D6D; }
+  fill: #E05D6D;
+  stroke: #E05D6D;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-lightGreen {
-  fill: #50E3C2; }
+  fill: #50E3C2;
+  stroke: #50E3C2;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 /*
 ========================================================

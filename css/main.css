@@ -2634,22 +2634,46 @@
 ========================================================
 */
 .fill-lightBlue {
-  fill: #45C6D6; }
+  fill: #45C6D6;
+  stroke: #45C6D6;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
-.fill-white, .optionForm .quest.selectOptions .contentButtons button:hover img, .optionForm .quest.selectOptions .contentButtons button:hover svg, .optionForm .quest.selectOptions .contentButtons button.active img, .optionForm .quest.selectOptions .contentButtons button.active svg {
-  fill: #FFFFFF; }
+.fill-white, .optionForm .quest.selectOptions .contentButtons button:hover img, .optionForm .quest.selectOptions .contentButtons button:hover g, .optionForm .quest.selectOptions .contentButtons button:hover svg, .optionForm .quest.selectOptions .contentButtons button.active img, .optionForm .quest.selectOptions .contentButtons button.active g, .optionForm .quest.selectOptions .contentButtons button.active svg {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-black, .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg {
-  fill: #575957; }
+  fill: #575957;
+  stroke: #575957;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-lightBlue {
-  fill: #45C6D6; }
+  fill: #45C6D6;
+  stroke: #45C6D6;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-red {
-  fill: #E05D6D; }
+  fill: #E05D6D;
+  stroke: #E05D6D;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-lightGreen {
-  fill: #50E3C2; }
+  fill: #50E3C2;
+  stroke: #50E3C2;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 /*
 ========================================================
@@ -5424,22 +5448,46 @@ header {
 ========================================================
 */
 .fill-lightBlue {
-  fill: #45C6D6; }
+  fill: #45C6D6;
+  stroke: #45C6D6;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
-.fill-white, .optionForm .quest.selectOptions .contentButtons button:hover img, .optionForm .quest.selectOptions .contentButtons button:hover svg, .optionForm .quest.selectOptions .contentButtons button.active img, .optionForm .quest.selectOptions .contentButtons button.active svg {
-  fill: #FFFFFF; }
+.fill-white, .optionForm .quest.selectOptions .contentButtons button:hover img, .optionForm .quest.selectOptions .contentButtons button:hover g, .optionForm .quest.selectOptions .contentButtons button:hover svg, .optionForm .quest.selectOptions .contentButtons button.active img, .optionForm .quest.selectOptions .contentButtons button.active g, .optionForm .quest.selectOptions .contentButtons button.active svg {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-black, .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg {
-  fill: #575957; }
+  fill: #575957;
+  stroke: #575957;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-lightBlue {
-  fill: #45C6D6; }
+  fill: #45C6D6;
+  stroke: #45C6D6;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-red {
-  fill: #E05D6D; }
+  fill: #E05D6D;
+  stroke: #E05D6D;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 .fill-lightGreen {
-  fill: #50E3C2; }
+  fill: #50E3C2;
+  stroke: #50E3C2;
+  stroke-width: 0;
+  stroke-linecap: butt;
+  stroke-dasharray: 0; }
 
 /*
 ========================================================
@@ -6331,7 +6379,7 @@ button:focus {
             flex-flow: column;
             justify-content: center; } }
         .optionForm .quest.selectOptions .contentButtons button {
-          width: 45%;
+          width: 47%;
           height: 70px;
           text-align: left;
           position: relative;
@@ -6342,9 +6390,11 @@ button:focus {
           .optionForm .quest.selectOptions .contentButtons button img, .optionForm .quest.selectOptions .contentButtons button svg {
             width: 100%;
             height: 100%;
-            max-width: 40px;
-            max-height: 40px;
+            max-width: 50px;
+            max-height: 50px;
             margin: 0 15px; }
+          .optionForm .quest.selectOptions .contentButtons button * {
+            filter: none !important; }
           .optionForm .quest.selectOptions .contentButtons button .content {
             width: calc(100% - 75px); }
   .optionForm .quest:first-child {

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="42px" viewBox="0 0 45 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.3%" y="-30.0%" width="118.6%" height="174.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Áreas-de-Sensibilidade---2-/-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-746.000000, -251.000000)">
+        <g id="Content" transform="translate(423.000000, 145.000000)" fill="#575957" fill-rule="nonzero" stroke="#575957" stroke-width="0.5">
+            <g id="Mais-de-uma-pessoa?">
+                <g id="Options" transform="translate(8.000000, 90.000000)">
+                    <g id="Não" filter="url(#filter-1)" transform="translate(300.000000, 0.000000)">
+                        <g id="Rectangle-9">
+                            <path d="M43.2617188,24 C40.4192383,24 38.5018555,25.4460776 37.5,26.4707829 C36.4981445,25.4460776 34.5807617,24 31.7382812,24 C27.7853516,24 25,27.5224 25,31.6797506 C25,38.1088157 31.3719238,43.0201855 37.0537598,45.950478 C37.3338379,46.0949387 37.6661621,46.0949387 37.9462402,45.950478 C43.6310059,43.0187149 50,38.112149 50,31.6797506 C50,27.5297529 47.2209473,24 43.2617188,24 Z M37.5,43.9729791 C32.708252,41.4311668 26.953125,37.0873457 26.953125,31.6797506 C26.953125,28.7020562 28.8103027,25.9607832 31.7382812,25.9607832 C34.0481934,25.9607832 35.8773437,27.3275472 36.6806641,28.5285269 C36.8588867,28.8103895 37.1651855,28.9778894 37.4978516,28.979507 C37.832373,28.9806835 38.1400879,28.8077424 38.3208008,28.526321 C38.3372559,28.5006348 40.005957,25.9607832 43.2617187,25.9607832 C46.190332,25.9607832 48.046875,28.7031837 48.046875,31.6797506 C48.046875,37.0839633 42.2816406,41.4365099 37.5,43.9729791 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
