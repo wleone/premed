@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     // SLIDER USED AT PREMED
-
+    // USADO PARA APRESENTAR A MEDPASS ANTES DE COMEÇAR O FLUXO DO PREMED
 
     $('.slider').slick({
       infinite: true,

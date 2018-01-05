@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+    // TESTE QUE O PELEGRINI ESTAVA EXPLICANDO, RELACIONADO AO LOGIN
+
     var url = 'https://pqbl2deo53.execute-api.us-west-2.amazonaws.com/dev/registration';
 
     var rt = {

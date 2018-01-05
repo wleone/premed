@@ -1,8 +1,11 @@
 jQuery(document).ready(function($) {
 
     // USED ON SMOKE OPTIONS AT PREMED
-
+    // FAZ COM QUE O CIGARRO APAREÇA NO MAÇO QUANDO A PAGINA FOR CARREGADA
     $(".cigarrets img.static").addClass('showCigarret');
+
+    // ESSAS FUNCOES ADICIONAM UMA CLASSE NOS BOTOES NA QUAL O USUARIO CLICAR
+    // E TROCA QUAL ILUSTRACAO DEVE APARECER
 
     // FIRST QUEST
     $(".quest.first .buttonSelect.first").click(function(event) {
@@ -30,6 +33,10 @@ jQuery(document).ready(function($) {
         }, 500);
         $(".quest.exSmoker").fadeOut();
     });
+
+    // ASSIM QUE O USUARIO ATUALIZAR O VALOR E FOR MAIOR QUE 0,
+    // A ANIMAÇÃO DE ENTRADA É INICIADA,
+    // CASO FOR MENOR QUE 0 A ANIMAÇÃO DE SAIDA DO CIGARRO É ADICIONADA
 
     $(".quest.first .buttonSelect.second").click(function(event) {
         $(this).addClass("active");
@@ -86,6 +93,7 @@ jQuery(document).ready(function($) {
     });
 
     // CIGARRET ANIMATION
+    // FUNÇÃO QUE ORDENA A ANIMAÇÃO DOS CIGARROS
 
     cigarretAnimation();
 

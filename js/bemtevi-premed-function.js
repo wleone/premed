@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+    // USADO EM ALGUMAS TELAS DO PREMED, ONDE PODE SER QUE O USUARIO TENHA UMA DUVIDA
+
     setTimeout( function(event){
         $('.bemtevi.premed').addClass('expandUp');
     }, 1000);

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    // ADICIONA OS BOTOES DE + E -
+
     jQuery('<div class="quantity-nav flex-row-between-center-center top-Zp"><div class="quantity-button quantity-down"></div><div class="quantity-button quantity-up"></div></div>').insertAfter('.kg');
 
     input = $('input[type="tel"]');
@@ -6,7 +8,12 @@ $(document).ready(function() {
     var calc = newVal / 2;
     var result = 1 + calc/200.0;
 
+    // ADICIONA A ANIMAÇÃO QUE ENGORDA OU EMAGRECE O PERSONAGEM
+
     $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + '); max-height: 90%;' );
+
+    // VALIDAÇÃO DO CAMPO DE PESO E PASSA O VALOR CONVERTIDO DO INPUT
+    // PARA ENGORDAR OU EMAGRECER O PERSONAGEM
 
     $('.weight').keyup(function() {
         setTimeout(function(){
@@ -39,6 +46,8 @@ $(document).ready(function() {
             $('.character').attr('style', 'transform: translateX(-50%) scaleX(' + result + '); max-height: 90%;' );
         }, 1500);
     });
+
+    // FUNÇÃO QUE AUMENTA OU DIMINUI OS VALORES QUANDO OS BOTÕES DE + E - SÃO CLICADOS
 
     jQuery('.quantity').each(function() {
         var spinner = jQuery(this),

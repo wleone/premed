@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
     // CHOOSE ETHNICITY AND GENRE
+    // ADICIONA OU REMOVE A CLASSE ATIVA DA ESCOLHA DE GENERO DO USUARIO
 
     $('.choose-genre .female').click(function(event) {
             $('.choose-genre .female img').toggleClass('active');
@@ -20,6 +21,8 @@ jQuery(document).ready(function($) {
                 $('.choose-ethnicity .male').css('display','flex');
             }, 500);
     });
+
+    // ADICIONAM OU REMOVEM A CLASSE ATIVA PARA A RAÇA QUE O USUARIO ESCOLHER
 
     $('.choose-ethnicity .male .card.masculino.afrodescendente').click(function(event) {
         $('.male .card.masculino.afrodescendente').css('opacity', '1').addClass('active');

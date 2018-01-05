@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     // SELECT INPUT
-
+    // USADA NO CALENDARIO DE ANIVERSÁRIO DO USUÁRIO
     $('.md-select.day').on('click', function () {
       $(this).toggleClass('active');
     });

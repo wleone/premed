@@ -1,10 +1,10 @@
 jQuery(document).ready(function ($) {
     // USED ON USER'S PSHYSICAL ACTIVITYS OPTIONS BUTTON AT PREMED
-
+    // FAZ A ILUSTRACAO APARECER QUANDO A PAGINA É CARREGADA
     $('.illustrations .alcoholic').addClass('appear');
 
     // CHANGE <img> for <svg>
-
+    // ALTERA A TAG IMG PARA SVG, ASSIM FACILITA A DIAGRAMACAO DO HTML
     jQuery('img.svg').each(function () {
         var $img = jQuery(this);
         var imgID = $img.attr('id');
@@ -38,6 +38,8 @@ jQuery(document).ready(function ($) {
         }, 'xml');
 
     });
+
+    // ADICIONA OU REMOVE A CLASSE ATIVA PARA OS BOTOES
 
     // FIRST QUEST
     $('.quest.first .buttonSelect.option').click(function (event) {

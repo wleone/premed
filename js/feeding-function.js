@@ -1,7 +1,11 @@
 jQuery(document).ready(function($) {
     // USED ON USER'S PSHYSICAL ACTIVITYS OPTIONS BUTTON AT PREMED
-
+    // FAZ A ILUSTRACAO APARECER QUANDO A PAGINA É CARREGADA
     $('.illustrations .three').addClass('appear');
+
+    // ADICIONAM OU REMOVEM A CLASSE ATIVA DOS BOTOES
+    // FAZ AS RESPECTIVAS ILUSTRACOES APARECEREM OU SUMIR DEPENDENDO DA RESPOSTA
+    // DO USUARIO, PARA MOSTRAR A QUANTIDADE DE REFEIÇÕES DO USUARIO
 
     // FIRST QUEST
     $('.quest.first .buttonSelect.first').click(function(event) {
@@ -28,6 +32,8 @@ jQuery(document).ready(function($) {
         $('.quest.first .buttonSelect.second').removeClass('active');
     });
 
+    // FAZ A FUNÇÃO DO MODAL PARA A ESCOLHA DE QUANTAS VEZES O USUARIO CONSOME
+    // OS RESPECTIVOS ALIMENTOS A BAIXO
     // SELECT FOODS
 
     // // CANDY
